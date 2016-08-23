@@ -479,6 +479,12 @@ input[type="button"].small,
     background-position: center;
 }
 
+.wrapper.style1a {
+    padding: 0em;
+    background: red;
+    background-size: cover;
+}
+
 .wrapper.style2 {
     background: #f2f2f2;
 }
@@ -558,6 +564,7 @@ input[type="button"].small,
     color: white;
     height: 4em;
     background: rgba(0, 0, 0, 0.5);
+    
 }
 
 #header .container {
@@ -800,4 +807,105 @@ input[type="button"].small,
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+
+/* people table */
+#people tr:nth-child(even) {background: #ffffff}
+#people tr:nth-child(odd) {background: #eeeeee}
+
+#people tr.directory {background: #ffffff;}
+#people tr.legend {background: #ffffff;}
+
+#people td
+{
+   font-size: 110%;
+   text-align: left;
+   padding: 0.25em 0.5em 0.25em 0.5em;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+
+}
+
+#people tr
+{
+}
+
+
+#people td.directory
+{
+   text-align: left;
+   padding-top: 2em;
+   padding-bottom: 0.25em;
+   border-style: solid;
+   border-width: 0px;
+   border-bottom-width: thin;
+   color: #777777;
+}
+
+#people tr.legend
+{
+   font-size: 100%;
+   text-align: left;
+   color: #777777;
+}
+
+#people td.legend
+{
+   font-size: 100%;
+   text-align: left;
+   color: #777777;
+   padding-bottom: 0em;
+}
+
+
+#people table 
+{
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0;
+   border: 0px;
+   border-collapse: collapse;
+}
+
+
+#people p
+{
+   padding: 0;
+   margin: 0.5em 0 0 0; 
+   font-size: 90%;
+}
+
+
+#people em.title
+{
+   font-size: 90%;
+   color: #555555;
+   line-height: 1;
+}
+
+#people tr.blank_row {background: #ffffff;   height: 2px; padding: 0em;}
+#people td.blank_row {padding: 0em;}
+
+
+#people em.interests
+{
+   font-size: 90%;
+   color: #000000;
+   line-height: 1;
+}
+
+#people em.email
+{
+   font-size: 90%;
+   color: #000000;
+}
+
+
+
+/* centering */
+p.center {
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 140%;
 }

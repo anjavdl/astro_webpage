@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Spring 2010: Astronomy Seminars</title>
+  </head>
+
+  <BODY text="#ffc573" link="#ooffff" vlink="#33ff00" background="stars.jpg">
+    <font size="+2" color="#ff8429"><b><center> 
+Title : "V & V for Astrophysical Fluid Simulations"<br>
+Speaker : James Glimm, Department of Applied Math, SBU
+    </center></b></font>
+
+    <blockquote><blockquote>
+    <font size="+1">
+    <p>Verification and Validation (V&V) for a numerical simulation asserts
+      two properties. The first (Verification) is that the equations as posed
+      are solved correctly, with controlled numerical errors. The second
+      (Validation) asserts that the equations as solved are an actual description 
+      of the physics problem to be solved.
+
+    <p>We point out fundamental obstacles to V&V for standard astrophysical
+     codes, and we trace the problems to fundamental issues of a mathematical
+     nature. Then we show how these obstacles can be overcome, leading to a
+     fluid simulation code which has been verified and validated on 
+     analogues of astrophysical problems. Finally we show how the
+     specialized numerical routines which have made this advance possible can
+     be combined with any standard astrophysical fluid code, and how a usefule
+     fraction of them can be readily inserted directly into any standard
+     astrophysical fluid code.
+    
+    <p>The test problems for this V&V exercise are analogues of, or details
+     from full fledged astrophysical situations. We study specifically the
+     classical Rayleigh-Taylor (RT) (steady acceleration) and Richtmyer-Meshkov (RM)
+     (shock acceleration) instabilities of a perturbed fluid interface.
+
+    <p>A number of startling conclusions are observed. For a flow accelerated
+     by multiple shock waves, we observe an interface between the two fluids
+     proportional to Delta x^-1, that is occupying a constant fraction of the 
+     available mesh degrees of freedom. This result suggests 
+     <ol>
+     <li> nonconvergence for the unregularized mathematical problem or  </li>
+     <li> nonuniqueness of the limit if it exists, or </li>
+     <li> limiting solutions only in the very weak form of a 
+     space time dependent probability distribution.  </li>
+     </ol> 
+
+    <p>The cure for this pathology is a regularized solution, in other words
+     inclusion of all physical regularizing effects, such as viscosity and
+     physical mass diffusion. 
+
+    <p>In other words, the amount and type of regularization of an
+     unstable flow is of central importance. Too much regularization, with a 
+     numerical origin, is bad, and too little, with respect to the physics,
+     is also bad. For systems of equations, the balance of regularization
+     between the distinct equations in the system is of central importance.
+
+    <p>At the level of numerical modeling, the implication from this insight
+     is to compute solutions of the Navier-Stokes, not the Euler equations.
+     Resolution requirements for realistic problems make this solution 
+     impractical in most cases. Thus subgrid transport processes must be modeled,
+     and for this we use dynamic models of the turbulence modeling community. 
+     In the process we combine and extend ideas of the capturing community 
+     (sharp interfaces or numerically steep gradients) with conventional
+     turbulence models, usually applied to problems relatively smooth at
+     a grid level.
+
+    <p>This strategy is verified (convergence under mesh refinement)
+     for a Richtmyer-Meshkov unstable turbulent mixing problem and it is validated
+     (comparison to laboratory experiments) through the study of Rayleigh-Taylor
+     unstable flows. These steps solve problems of some five decades standing
+     in the area of turbulent mixing. 
+
+    <p>The essential role of a number of collaboratiors is gratefully
+     acknowledged.
+
+    </font>
+    </blockquote></blockquote>
+
+  </body>
+</html>

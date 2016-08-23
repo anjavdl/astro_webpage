@@ -1,0 +1,273 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="ProgId" content="Word.Document">
+   <meta name="Generator" content="Microsoft Word 9">
+   <meta name="Originator" content="Microsoft Word 9">
+   <meta name="GENERATOR" content="Mozilla/4.77 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>The equation of motion of the Harmonic oscillator is</title>
+<link rel=File-List href="./harmonic_program_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Philip Allen</o:Author>
+  <o:LastAuthor>Philip Allen</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>10</o:TotalTime>
+  <o:LastPrinted>2002-01-11T20:06:00Z</o:LastPrinted>
+  <o:Created>2002-01-19T19:00:00Z</o:Created>
+  <o:LastSaved>2002-01-19T19:00:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>399</o:Words>
+  <o:Characters>2275</o:Characters>
+  <o:Company>Stony Brook University</o:Company>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2793</o:CharactersWithSpaces>
+  <o:Version>9.4402</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+        {font-family:"MS Mincho";
+        panose-1:2 2 6 9 4 2 5 8 3 4;
+        mso-font-alt:"\FF2D\FF33 \660E\671D";
+        mso-font-charset:128;
+        mso-generic-font-family:roman;
+        mso-font-format:other;
+        mso-font-pitch:fixed;
+        mso-font-signature:1 134676480 16 0 131072 0;}
+@font-face
+        {font-family:"\@MS Mincho";
+        panose-1:2 2 6 9 4 2 5 8 3 4;
+        mso-font-charset:128;
+        mso-generic-font-family:modern;
+        mso-font-pitch:fixed;
+        mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+        {mso-style-parent:"";
+        margin:0in;
+        margin-bottom:.0001pt;
+        mso-pagination:widow-orphan;
+        font-size:12.0pt;
+        font-family:"Times New Roman";
+        mso-fareast-font-family:"Times New Roman";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+        {margin:0in;
+        margin-bottom:.0001pt;
+        mso-pagination:widow-orphan;
+        font-size:10.0pt;
+        font-family:"Courier New";
+        mso-fareast-font-family:"Times New Roman";}
+@page Section1
+        {size:8.5in 11.0in;
+        margin:1.0in 65.95pt 1.0in 65.95pt;
+        mso-header-margin:.5in;
+        mso-footer-margin:.5in;
+        mso-paper-source:0;}
+div.Section1
+        {page:Section1;}
+-->
+</style>
+</head>
+<body lang="EN-US" style="tab-interval:.5in">
+
+<div class=Section1>
+<center><font face="Times New Roman,Times"><font color="#3333FF"><font size=+2>Numerical
+Integration of Newton's Laws.</font></font></font>
+<br><font face="Times New Roman,Times"><font color="#3333FF"><font size=+2>A
+simple example using fortran and PGPLOT graphics.</font></font></font></center>
+
+
+<p class="MsoPlainText"><font face="Times New Roman,Times">The equation
+of motion of the Harmonic oscillator is</font>
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">md<sup>2</sup>x/dt<sup>2
+</sup>=
+-kx.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">Let us use
+new variables <i>u = x/x<sub>0</sub></i> and <i>s = t/t<sub>0</sub></i>.&nbsp;
+Then the equation of motion is</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">(m x<sub>0</sub>/
+t<sub>0</sub><sup>2</sup>) md<sup>2</sup>u/ds<sup>2 </sup>= - x<sub>0</sub>
+ku.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">The common
+factor x<sub>0</sub> cancels.&nbsp; The equation is</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">d<sup>2</sup>u/ds<sup>2</sup>=-(k
+t<sub>0</sub><sup>2</sup> /m)u.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">Now we can
+choose<i> x<sub>0</sub></i> and <i>t<sub>0</sub></i> to be anything we
+like.&nbsp; There is nothing in the equation itself that indicates a good
+choice for <i>x<sub>0</sub></i>, so we will simply choose <i>x<sub>0</sub></i>
+to be the initial position <i>x(t=0)</i>.&nbsp; The choice of <i>t </i>is
+indicated by the equation.&nbsp; We should make the constant factor <i>(kt<sub>0</sub><sup>2</sup>/m)</i>
+be something simple, for example, <i>1</i>.&nbsp; The equation of motion
+of a harmonic oscillator contains a natural scale of time, but no natural
+scale of distance!&nbsp; Our equation is then:</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">d<sup>2</sup>u/ds<sup>2</sup>=-u.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">Let us introduce
+the dimensionless velocity <i>v</i> which corresponds to the dimensionless
+distance <i>u</i>.</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">v = du/ds</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">The equation
+of motion then can be written as two coupled first-order equations (instead
+of a single second-order equation):</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">du/ds =
+v(s) = (u(s+ds)-u(s))/ds</font></i></div>
+
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">dv/ds =
+-u(s) = (v(s+ds)-v(s))/ds.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">The last part
+of these equations is exact only in the limit as <i>ds</i> goes to zero.&nbsp;
+But we will solve these equations for some small value of <i>ds</i>, expecting
+that the answer will be reasonably good if ds is small compared to the
+intrinsic scale of dimensionless time, namely <i>1</i>.&nbsp; In the example
+below, we take <i>ds</i> to be <i>.05</i>.&nbsp; The approximate equations
+are</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">u(s+ds)
+= u(s) + v(s) ds</font></i></div>
+
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">v(s+ds)
+= v(s) - u(s) ds.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">The Fortran
+program below integrates the equation of motion by sequential application
+of the 2 equations above.&nbsp; This is known as the "<font color="#FF0000">Euler
+method</font>" or sometimes as the "forward Euler method" for integrating.&nbsp;
+The results are displayed as a "trajectory" in the space of variables <i>(u,v)</i>
+known as "phase space."&nbsp; The initial velocity is taken to be zero.&nbsp;
+The exact answer is a circle, because the equations have a solution <i>u(s)=u(0)cos(s)</i>
+and <i>v(s)= -u(0)sin(s)</i>, and we agreed to take <i>u(0)</i> to be <i>1</i>.&nbsp;
+But the actual answer spirals outwards!&nbsp; How do we cure this?&nbsp;
+There are two ways.&nbsp; (1) Choose a smaller value of dt.&nbsp; The value
+<i>.02</i>
+is not good enough.&nbsp; Or, (2) use a better "integrating algorithm."&nbsp;
+There is a very simple way to improve the result.&nbsp; The equations can
+be equally well written as</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">u(s+ds)
+= u(s) + v(s) ds</font></i></div>
+
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">v(s+ds)
+= v(s) - u(s+ds) ds.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">This does
+a much better job.&nbsp; Try it out!</font></div>
+
+<center><font face="Times New Roman,Times"><font color="#CC33CC"><font size=+2>Sample
+program</font></font></font></center>
+
+<p><br>
+<p><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+program Harmonic</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c forward integrate
+harmonic oscillator in 1d using Newton's laws</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c simplest possible
+"forward Euler" integrating algorithm</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c use PGPLOT graphics.&nbsp;
+Compile statement for SUN workstations at</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c the math sinc site:&nbsp;
+g77 -o prog prog.f $PGPLOTL</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+implicit none</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+real u(2),v(2),dt</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+integer i,n,ier,PGOPEN</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c choose time increment
+dt</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+write(6,*) 'what step size dt?'</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+read(5,*) dt</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c choose how many steps
+to integrate</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+write(6,*) 'how many steps?'</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+read(5,*) n</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+u(1)=1.0</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+v(1)=0.0</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c open PGPLOT using
+xwindow</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ier=PGOPEN('/xwin')</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+if (ier .ne. 1) stop</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c PGPAP scales the size
+and aspect ratio of the plot</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+call PGPAP(7.0,1.0)</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c PGENV chooses beginning
+and end point of x and y axis</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+call PGENV(-1.5,1.5,-1.5,1.5,1,1)</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c PGLAB labels the axes
+and the graph</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+call PGLAB('dimensionless position','dimensionless momentum',</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;
+1 'Harmonic Oscillator')</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+do 100 i=1,n</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+u(2)=u(1)+v(1)*dt</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+v(2)=v(1)-u(1)*dt</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c PGLINE plots the next
+segment of the trajectory in "phase space"</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c that is, it plots
+momentum vertically and position horizontally,</font></font>
+<br><font face="Courier New,Courier"><font size=-1>c using a line to show
+the change of the point in this space.</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+call PGLINE(2,u,v)</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+u(1)=u(2)</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+v(1)=v(2)</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp; 100 continue</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+call PGEND</font></font>
+<br><font face="Courier New,Courier"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+end</font></font>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;</div>
+
+</body>
+</html>

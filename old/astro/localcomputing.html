@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <title>Astronomy Group Local Computing Resources</title>
+    <link rel="icon" type="image/png" href="saturn_icon.png">
+    <link rel="stylesheet" type="text/css" href="/astro/test.css">
+  </head>
+
+  <body>
+
+    <div id="containerw">
+
+      <div id="header">
+	<h1>Stony Brook Astronomy Program</h1>
+	<h2>Department of Physics and Astronomy</h2>
+	<h2>Stony Brook University</h2>
+      </div> <!-- #end div header -->
+
+      <div id="menubar">
+  
+	<ul>
+	  <li><a href="./">Astro home</a></li>
+	  <li><a href=#systems>Available Systems</a></li>
+	  <li><a href=#web>Web space</a></li>
+	  <li><a href=#email>Email</a></li>
+	  <li><a href=#printing>Printing</a></li>
+	  <li><a href=#software>Available Software</a></li>
+	  <li><a href=#wifi>Wireless</a></li>
+	  <li><a href=#terms>Terms of Usage</a></li>
+	</ul>
+
+      </div> <!-- #end div menubar -->
+
+      <div id="contentw">
+
+	<h1>The Astronomy Computing Facility (ACF)</h1>
+
+	<!-- put information here -->
+         By making use of any ACF systems, including the web and mail servers, or 
+         equipment you are agreeing to the Terms of Usage available
+         <a href=#terms>here</a>
+
+           <h3>Critical Note:</h3>
+               We do not maintain backups of the <b>/home</b> directory.   
+               <b>Backing up your data is your responsibility!</b>  You may
+               find it useful to back up your data to DVD using the <b>k3b</b>
+               DVD burner found on some of the systems.  Please see the system
+               administrator if you require assistance. 
+
+        <h2><a NAME=systems>ACF public systems available for login:</a></h2>
+   
+
+           <p>At the present time the following systems are available for
+           use as a part of the ACF: 
+           <ul> 
+             <li>kirk.astro.sunysb.edu
+             <li>spock.astro.sunysb.edu
+             <li>scotty.astro.sunysb.edu
+             <li>sulu.astro.sunysb.edu
+             <li>uhura.astro.sunysb.edu
+             <li>mccoy.astro.sunysb.edu
+             <li>klingon.astro.sunysb.edu
+             <li>vulcan.astro.sunysb.edu
+             <li>ugrad1.astro.sunysb.edu
+             <li>ugrad2.astro.sunysb.edu
+             <li>ugrad3.astro.sunysb.edu
+             <li>ugrad4.astro.sunysb.edu
+           </ul> 
+           All of the aforementioned machines are running the 
+           <a href="http://www.centos.org">CentOS 6.6</a> distribution
+           of linux and they share the same
+           /home partition.  You may log into
+           any of these systems using via secure shell, i.e. ssh, or 
+           directly at the console in room 445B.   
+
+        <h2><a NAME=web>Compilers:</a></h2> 
+              The default compiler 
+           system is currently GCC 4.4.6 but the GCC 4.8.2 compilers are 
+           available under the /opt/centos/devtoolset-2/root tree.  If
+           you wish to use the GCC 4.8.2 compilers you should add the
+           appropriate bin and man directories to the beginning of
+           your PATH,  and MANPATH environment variables.
+
+        <h2><a NAME=web>IDL:</a></h2> 
+           IDL is available on some, but not all of the public machines.
+           IDL users are advised to use kirk and scotty, the two most capable
+           machines.
+
+
+        <h2><a NAME=web>Web space:</a></h2> 
+
+             All users with accounts on the ACF systems have web space
+             on the Astro group web server at <a
+             href="http://www.astro.sunysb.edu">http://www.astro.sunysb.edu</a>
+             This web space is available through the ACF public
+             systems via the <b>/www</b> disk which is mounted only on kirk.                 Each user has their own subdirectory on the
+             <b>/www</b> disk with the path
+             <b>/www/your_user_name</b>.  The URL for each user's web site
+             is <b>http://www.astro.sunysb.edu/your_user_name</b> For
+             example: a user with the username <b>inewton</b> would have a
+             web directory at <b>/www/inewton</b> and their URL would 
+             be <b>http://www.astro.sunysb.edu/inewton</b>   Please note that 
+             there is no "~" in the URL.
+
+        <h2><a NAME=email>Email:</a></h2> 
+             The email disk, <b>/var/spool/mail</b> is mounted only on kirk.
+             Each user of the ACF public systems should use 
+             <b>your_user_name@mail.astro.sunysb.edu</b> as their reply-to address.
+             Please DO NOT have mail sent directly to the individual systems, i.e. kirk, 
+             spock, scotty, etc.   
+
+             <p>You may forward your email to a system outside the
+             ACF by placing an ASCII file named <b>.forward</b>, containing the 
+             forwarding address on the first line, in your home directory.   Note
+             that in order for this to work, the <b>.forward</b> file must not have 
+             group or world write permissions enabled.   You can avoid this problem 
+             by issuing the command <b>chmod og-w .forward</b> in your home directory. 
+
+             <p> There are a number of email clients available including <b>kmail</b>, 
+                 <b>thunderbird</b>, <b>mutt</b>, <b>alpine</b>, and <b>mail</b>.    
+                 If you require assistance in configuring a specific
+                 email client please see the system administrator.
+
+             <h3>Special Note for pine users:</h3>
+                 Users who wish to use the <b>pine</b> email client, which is unvailable
+                 as a standard part of modern linux distributions because of licensing 
+                 restrictions, should instead use <b>alpine</b>.
+                 The <b>alpine</b> client  has been designed as a replacement for <b>pine</b>
+                 and has the same user interface as <b>pine</b>.
+
+                 <p>  When running alpine you may see a warning message about the fact that 
+                  <b>alpine</b> in unable to obtain a lock on your <b>/var/spool/mail</b>
+                  subdirectory.    You can safely ignore this warning if you follow precaution 1 below.
+                  In order to protect the integrity of your email <b>alpine</b> users 
+                  should take two special precautions:
+                    <ol>
+                       <li>  NEVER have more than one instance of <b>alpine</b> running at
+                          one time on the public cluster.  
+                          Having multiple simultaneous sessions could result
+                          in a loss of mail.
+                       <li>  YOU MUST ensure that <b>alpine</b> is configured to transfer mail
+                          from your <b>/var/spool/mail</b> subdirectory into your home directory.
+                          Using <b>/var/spool/mail</b> to store your mailbox is very bad idea as it 
+                          is not backed up and/or may be lost during a system upgrade.   You can
+                          cause <b>alpine</b> to transfer mail to your home directory (if it is not 
+                          already doing so) by creating an empty file named <b>mbox</b> in your home
+                          directory.   When <b>alpine</b> is opened it will automatically transfer
+                          your mail to this file.   Please see the system administrator if you need
+                          help in accomplishing this task.                          
+                    </ol>
+
+        <h2><a NAME=printing>Printing:</a></h2> 
+             Printing on the printers in Rm. 445B is available for PostScript and
+            text files on the ACF systems using the <b>lpr</b> command.   The default
+            printer queue is the B&W duplex queue.   The queue may be specified by the command: 
+            <b> lpr -P <queue_name></b> where <b>queue_name</b> is one of the following:
+            <ul> 
+               <li><b>hpk</b> the B&W simplex (single-sided) queue
+               <li><b>hpdup</b> the B&W duplex (double-sided) queue
+               <li><b>hpcolor</b> the color simplex (single-sided) queue
+               <li><b>hpcdup</b> the color duplex (double-sided) queue
+            </ul> 
+             Please see the system administrator if you require assistance in setting up printing
+             to these systems from your own computer.            
+
+        <h2><a NAME=software>Available Software:</a></h2> There are a number of useful
+            software packages installed on the ACF systems including:
+            <ul> 
+               <li><b>IDL</b> (ver 8.1) for data analysis and  plotting 
+               <li><b>Gnuplot</b> for plotting 
+               <li><b>SM</b>, a.k.a. SuperMongo (ver. 2.4.36), for plotting
+               <li><b>GCC</b> the Gnu Compiler Collection (ver. 4.4.6)
+                   including compilers for C, C++, and F95
+               <li><b>Python</b> (ver. 2.6.6 ) a very useful scripting language 
+               <li><b>Numpy</b> for linear algebra and numerical computing with  Python 
+               <li><b>Scipy</b> the Python scientific computing algorithms package
+               <li><b>Matplotlib</b> the powerful MATPLOTLIB package for plotting
+               <li><b>Octave</b> the freeware clone of MATLAB for linear algebra
+                         and other numerical computing
+               <li><b>Maxima & Xmaxima</b> the maxima symbolic algebra system
+               <li><b>Adobe Acroread</b> the Adobe Acrobat reader for PDF files
+               <li><b>LaTeX</b> the LaTeX typesetting package
+               <li><b>Emacs and Xemacs</b> the EMACS editing system
+               <li><b>Xv</b> the Xv image viewer
+               <li><b>Firefox</b> the Firefox web browser
+               <li><b>Google Chrome</b> the Google Chrome web browser
+               <li><b>Adobe Flash</b> the Adobe Flash plugin for video
+               <li><b>Open Office</b> the Open Office suite (oowriter, oocalc, ooinpress, etc.)
+               <li><b>HDF5</b> the Hierarchical Data Format libraries (ver. 1.8) 
+           </ul> 
+
+            Custom libraries for these packages should be
+            installed in user directories.  We regret that we cannot
+            install these in common space as there are often conflicts
+            between various versions of the libraries.  If you need
+            assistance with finding any of these packages please see the system administrator.
+
+        <h2><a NAME=wifi>WiFi Access:</a></h2> WiFi is available on the 4th floor of the ESS
+            building via <a  href="http://it.cc.stonybrook.edu/networking/wolfienet_secure">
+            WolfieNet Secure</a> and 
+            <a href="http://it.cc.stonybrook.edu/networking/wolfienet_guest">WolfieNet-Guest</a>.
+            Please click on the preceding links for instructions on how to connect.
+
+
+        <h2><a NAME=terms>Terms of Usage:</a></h2>       
+           The following <b>Terms of Usage</b> have been approved by the Astronomy Computing Committee.
+           By logging into any of the ACF systems, or by using them for email, printing, display, or 
+           other input/output purposes, or maintaining web pages on the Astronomy Web Server you 
+           are agreeing to the following terms of usage for these machines:
+           <ul>
+              <li> You agree that the System Manager will have full access to all files and 
+                   data on the public machines and have the right to remove any and all files 
+                   which are in conflict with this usage policy for these systems, or which 
+                   compromise the the security and operability of the public systems.
+              <li> You agree that your usage of the machines may be monitored for the purposes of 
+                   security and maintenance of the operating status of these machines. This includes, 
+                   but is not limited to, the monitoring of data transmitted over the Internet, data 
+                   found on storage subsystems, web pages, and keystrokes. You agree that you have 
+                   no legal expectation of privacy on these machines.
+              <li> You agree that these machines are to be used for University and Research 
+                   Foundation related business and scholarly activity only. All other usage is 
+                   prohibited.
+              <li> You agree to utilize all ACF equipment in a manner that will minimize 
+                   security risks to the systems and to minimize inconvenience to other users 
+                   of the systems. This includes, but is not limited to, maintaining password 
+                   security and complying with security policies established by the System Manager 
+                   and the Astronomy Computer Committee.
+              <li> You agree to follow the instructions of the System Manager and the Astronomy 
+                   Computer Committee regarding the use of these systems.
+              <li> You agree that the usage of these systems also must conform to the all University 
+                   policies including the University 
+                   Policy on the Responsible Use of Information Technology.
+              <li> You agree to be responsible for maintaining a current awareness of these Terms 
+                   of Usage, as well as the University Usage Policy, both of which may change at 
+                   any time.
+              <li> You agree that backup of your files is solely your responsibility. 
+           </ul>
+
+           Usage of the ACF in a manner that conflicts with the aforementioned terms will be 
+           grounds for suspension of all access to the system at the discretion of the System Manager 
+           and/or the Astronomy Computer Committee. Further review of any suspensions by the Astronomy 
+            Computer Committee may result in permanent termination of access to these systems.
+
+These "Terms of Usage" have been approved by the Astronomy Computer Committee. 
+
+      </div> <!-- #end div content -->
+
+      
+      <div id="footer">
+	Dept. of Physics and Astronomy &bull; SUNY Stony Brook &bull;
+	Stony Brook, NY 11794-3800 
+      </div> <!-- #end div footer -->
+      
+    </div> <!-- #end div container -->
+    
+  </body>
+</html>

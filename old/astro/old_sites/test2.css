@@ -1,0 +1,363 @@
+/* CSS inspiration from:
+     http://www.visualdesigncore.com/tutorials/HTML-CSS/2-Column-Layout/
+     http://css.maxdesign.com.au/floatutorial/tutorial0815.htm
+*/
+
+*
+body
+{
+   font-family: "Arial", "Bitstream Vera Sans", "Helvetica", sans-serif;
+   font-size: 11pt;
+   text-align: center; /* IE hack -- margin-auto in container doesn't work */
+   background-color: #ffffff;
+}
+
+/* 
+   the container to hold the content of the entire page: header,
+   menubar, content area, and footer 
+*/
+
+#container
+{
+   width: 90%;
+   max-width: 1024px;
+   min-width: 780px;
+   margin: 0 auto; 
+   background-color: #ffffff;
+   color: #000000;
+   border: 1px solid gray;
+   line-height: 130%;
+   background: url(images/bg_180_SBblue.png) repeat-y;
+   text-align: left; /* undo IE hack to body */
+}
+
+
+#logo
+{
+   padding-left: 27;
+   vertical-align: center;
+}
+
+
+/* 
+   the header at the top of each page
+*/
+
+#header
+{
+   padding: .5em;
+   background-color: #990000;
+   border-bottom: 1px solid gray;
+   height: auto;
+}
+
+#header h1
+{
+   padding: 0;
+   margin: 0;
+   /* color: #FFFF66; */
+   color: #FFCC66; 
+   text-align: center;
+   font: normal 32px "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+#header h2
+{
+   padding: 0;
+   margin: 0;
+   color: white;
+   text-align: center;
+   font: normal 20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+
+/*
+   the menubar holds the main menu to navigate the site
+*/
+
+#menubar
+{
+   font: italic 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+   float: left;
+   width: 180px;
+   margin: 0;
+   padding: 0;
+   background: #003399;
+   line-height: 120%;
+   display: block;
+}
+
+#menubar ul 
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   border: none;
+}
+
+#menubar li 
+{
+   background: #003399;
+   font-size: 14pt;
+   font-weight: bold;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   padding-left: 0px;
+   padding-bottom: 0px;
+}
+
+#menubar li.divider 
+{ 
+   border-bottom: 1px dotted #888888; 
+   padding: 0;
+   margin: 0;
+   font-size: 0; /* needed for IE */
+   width: 178px; /* needed for IE */
+   list-style: none;
+   line-height: 0;
+   overflow: hidden;
+   vertical-align: bottom; /* needed for IE */
+}
+
+#menubar ul li a 
+{
+   text-decoration: none;
+   color: white;
+   display: block;
+   padding: 4px 0 8px 0;
+   margin: 0;
+   border: 1px solid #003399;
+   width: 178px; /* needed for IE */
+   vertical-align: bottom; /* needed for IE */
+}
+
+#menubar ul li a:hover 
+{
+   color: #990000;
+   /* background-color: #bbeeff; */
+   /* background-color: #FFFF66; */
+   background-color: #FFCC66;
+   border: 1px solid #990000;
+   display: block;
+   width: 178px;
+   padding: 4px 0 8px 0;
+   margin: 0;
+   vertical-align: bottom; /* needed for IE */
+}
+
+
+#menubar .current a 
+{
+   color: #990000;
+   /* background-color: #bbeeff; */
+   /* background-color: #FFFF66; */
+   background-color: #FFCC66;
+   border: 1px solid #990000;
+   display: block;
+}
+
+
+
+/*
+   the content area is the main portion of each page where we display the 
+   content unique to that page
+*/
+
+#content
+{
+margin-left: 180px;
+border-left: 1px solid gray;
+padding: 1em;
+}
+
+#content img.right 
+{
+   float:right;
+   border:none;
+   margin:0px 0px 15px 20px;
+}
+
+#content img.left 
+{
+   float:left;
+   border:none;
+   margin:0px 20px 15px 0px;
+}
+
+#content h1
+{
+   font: italic 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+   text-align: left;
+   color: #003399;
+}
+
+#content h2
+{
+   font: italic 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+   text-align: left;
+   color: #003399;
+}
+
+
+
+/*
+   research is on the main page, where we show a highlight
+*/
+
+#research h1
+{
+   font: normal 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+   text-align: center;
+   color: #888888;
+}
+
+.center 
+{
+   margin: 0;
+   text-align: center;
+}
+
+#research .caption
+{
+   font-size: 11pt;
+   margin: 1em 1em 0 1em;   
+   color: #003399;
+   line-height: 120%;
+}
+
+
+/*
+   people is in the content area of the directory
+*/
+
+#people
+{
+}
+
+#people td
+{
+   font-size: 11pt;
+   text-align: left;
+   padding: 0.25em 0.5em 0.25em 0.5em;
+}
+
+#people td.directory
+{
+   font: italic 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+   text-align: left;
+   padding-top: 1.5em;
+   border-style: solid;
+   border-width: 0px;
+   border-bottom-width: thin;
+   color: #777777;
+}
+
+#people tr.legend
+{
+   font-size: 10pt;
+   text-align: left;
+   color: #777777;
+}
+
+#people td.legend
+{
+   font-size: 10pt;
+   text-align: left;
+   color: #777777;
+}
+
+
+#people table 
+{
+   margin: 0 1em 0 1em;
+   padding: 0;
+}
+
+#people caption
+{
+   font-size: 10pt;
+   padding: 0;
+   margin: 2em auto;
+   text-align: left;
+}
+
+#people p
+{
+   padding: 0;
+   margin: 0.5em 0 0 0; 
+   font-size: 10pt;
+}
+
+
+#bigright 
+{
+   font-size: 10pt;
+   color: gray;
+   float: right;
+   width: 330px;
+   margin: 0 0 10px 15px;
+   padding: 5px;
+   border: none;
+   text-align: left;
+}
+
+.fac_right {float: right;
+           width: 200px;
+           margin: 0 0 15px 20px;
+           padding: 5px;
+           border: none;
+           text-align: center;}
+
+
+#main_image
+{
+   float: left;
+   width: 360px;
+}
+
+#main_caption
+{
+   margin-left: 1em;
+   float: left;
+   width: 220px;
+}
+
+
+
+#alumni
+{
+}
+
+#alumni ul 
+{
+   padding: 0em;
+   margin: 1em 0 0 4em;
+   border: none;
+}
+
+#alumni li 
+{
+   padding: 0.5em;
+}
+
+
+
+/*
+   the footer is at the bottom of each page
+*/
+
+#footer
+{
+   clear: both;
+   text-align: center;
+   margin: 0;
+   padding: .5em;
+   color: white;
+   background-color: #990000;
+   border-top: 1px solid gray;
+   font: normal 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+

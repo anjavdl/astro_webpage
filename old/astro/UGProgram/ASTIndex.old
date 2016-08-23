@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html>
+<title>Undergraduate Astronomy: Index</title>
+<body bgcolor=#ffff80 text=#004a4a link=red vlink=blue>
+<center>
+<H5>Undergraduate Astronomy<br>at Stony Brook</H5>
+</center><font size=-1>
+<li><A href="Cover.html" target="rightf">Cover</A>
+<li><a href="update_0402.html" target="rightf">Update on changes to major</a>
+<li><A href="Programs.html" target="rightf">AST Programs</A>
+    <menu>
+    <li><A href="Programs.html#sample program" target="rightf">Sample 
+         Program</A>
+    <li><A href="Programs.html#major" target="rightf">The AST Major</A>
+    <li><A href="Programs.html#honors" target="rightf">With Honors</A>
+    <li><A href="Programs.html#minor" target="rightf">The AST Minor</A>
+    </menu>
+<li><A href="Intro.html" target="rightf">Introductory Courses</A>
+    <menu>
+    <li><A href="Intro.html#100" target="rightf"> 100: Astronomy Today</A>
+    <li><A href="Intro.html#101" target="rightf"> 101: Intro Astro</A>
+    <li><A href="Intro.html#105" target="rightf"> 105: Solar System</A> 
+    <li><A href="Intro.html#112" target="rightf"> 112: Astro Lab </A>
+    <li><A href="Intro.html#200" target="rightf"> 200: Astronomical Research at SBU</A>
+    <li><A href="Intro.html#203" target="rightf"> 203: Astro for 
+        Scientists </A>
+    <li><A href="Intro.html#205" target="rightf"> 205: Planetary Sciences</A>
+    <li><A href="Intro.html#248" target="rightf"> 248: Search for Life </A>
+    </menu>
+    <menu>
+    <li><A href="Feingold.html" target="rightf"> The Feingold Prize </A>
+    </menu>
+<li><A href="Advanced.html" target="rightf">Advanced Courses</A>
+    <menu>
+    <li><A href="Advanced.html#301" target="rightf"> 301: Collisions</A>
+    <li><A href="Advanced.html#304" target="rightf"> 304: The Universe</A>
+    <li><A href="Advanced.html#341" target="rightf"> 341: Stars and 
+        Radiation</A>
+    <li><A href="Advanced.html#346" target="rightf"> 346: Galaxies </A>
+    <li><A href="Advanced.html#347" target="rightf"> 347: Cosmology </A>
+    <li><A href="Advanced.html#443" target="rightf"> 443: Observational 
+        Techniques</A>
+    </menu>
+<li><A href="ast_courses.html" target="rightf">Recently Offered Courses <br>
+            and Links to Web Pages</A>
+
+</font>
+</body>
+</html>

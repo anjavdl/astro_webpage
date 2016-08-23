@@ -1,0 +1,932 @@
+Return-Path: <MSIMON@astro.sunysb.edu>
+Received: from sbast1.ess.sunysb.edu by sbast4.ess.sunysb.edu  with SMTP
+        (5.65/1.34/indent-1.0) id AA22926; Tue, 19 Jul 1994 17:05:50 -0400 
+Date: Tue, 19 Jul 1994 17:05:48 -0400 (EDT)
+From: MSIMON@astro.sunysb.edu
+To: TPH@astro.sunysb.edu
+Message-Id: <940719170548.20400d94@astro.sunysb.edu>
+Subject: as promised
+
+From:	SBAST1::DPTSIMON     19-JUL-1994 17:01:35.00
+To:	MSIMON
+CC:	
+Subj:	most.tex
+
+
+\raggedbottom
+\input microvaxfonts.tex
+\input macros.tex
+\tolerance=2000
+\twelvepoint
+\rm
+\baselineskip=12pt
+\voffset=0in
+\hoffset=0in
+\vsize=9in
+\hsize=6.5in
+\def\interest#1{\halign{\quad##\hfil\cr\kern-1em#1\crcr}}
+\nopagenumbers
+
+
+\noindent
+\centerline{\bf THE UNIVERSITY}
+\bigskip
+  Amid the rolling hills of Long Island's north shore, the State University of 
+New York at Stony Brook campus spreads out over 1,100 acres of heavily wooded 
+countryside.  Located at the border of suburban and rural Long Island, 
+equidistant from the western and eastern ends, Stony Brook students enjoy the 
+best of many worlds.  The University is less than 60 miles from Manhattan which 
+is easily accessible by train or car.  At the same time, the tranquility of 
+Long Island's rural areas and seashores are adjacent to the campus.  Stony 
+Brook lies about a mile from the shores of Long Island Sound, and less than 15 
+miles from the wide sandy beaches of the Atlantic on Fire Island, Long Island's 
+southern coast.  The many miles of seashore, in addition to the state and 
+national parklands, offer ample opportunities for recreation.
+\medskip
+
+     Although the University was established in 1957, its present form began to 
+emerge during a period of rapid growth in the late 1960's and early 1970's.  
+Within the past few years, the University's size has stabilized and comprises 
+approximately 1,300 faculty and 16,000 students of whom 5,000 are graduate 
+students.  Academic buildings, laboratories, and libraries form the nucleus of 
+the campus.  These are surrounded by six residential quadrangles and athletic 
+fields and facilities.  In 1980, University Hospital was opened, a 540-bed 
+research/teaching hospital that is the focus of Stony Brook's medical and 
+nursing programs.
+\medskip
+
+     Within the past 20 years Stony Brook has formed many departments and 
+programs that have attained highly regarded national and international 
+reputations.  This is especially true within the Division of Physical Sciences, 
+which includes the Departments of Chemistry, Earth and Space Sciences, 
+Mathematics, and Physics.  As a result, Stony Brook attracts faculty and 
+students of the highest caliber from across the continent and the world.
+\eject
+\cl{\bf THE DEPARTMENT}
+\bigskip
+     The Astronomy Program at Stony Brook is a part of the Department of Earth 
+and Space Sciences.  The Astronomy Program comprises nine full-time 
+astronomers on the faculty, a varying number of
+visiting and  adjunct faculty, two or three postdoctoral 
+researchers, and about fifteen graduate students pursuing advanced study
+in various areas of astronomy.  There are 16 other full-time faculty 
+ in the Department of Earth and Space Sciences.
+ These are in various areas of geology
+and include faculty with interests in planetary geology and
+meteoritics.  There are active collaborations 
+between the astronomers and
+faculty and graduate students in the Mechanical Engineering (Atmospheric 
+Sciences) and Physics Departments as well as with physicists at the
+Brookhaven National Laboratory which is situated about 20 miles east of
+the campus.
+\medskip
+
+     Stony Brook astronomers make regular use of the wide array of 
+instrumentation available to contemporary astronomy. Stony Brook faculty and 
+graduate students are particularly frequent users of the facilities of the 
+National Optical Astronomy Observatories and the National Radio Astronomy 
+Observatories (in the past year SUNY-SB joined the AURA Board), the 
+observatories at Mauna Kea, use data obtained by the space observatories (most 
+notably Einstein, IRAS, and IUE) and participate in national and international 
+missions to the planets.  Several of the faculty participate in consortia 
+proposing to use the Hubble Space Telescope.  Stony Brook astronomers 
+participate in a time sharing agreement to use the FCRAO 14-meter millimeter 
+wave antenna.
+\medskip
+
+     Excellent modern computing facilities for support of data analysis and 
+theoretical work are available at Stony Brook.  By campus network, the 
+astronomers use the Computing Center's VAX-8600 and IBM-3083,
+ the Theoretical Physics' 
+VAX-780, and their own micro-VAX II.
+Researchers also have direct access to the Cornell and Princeton Supercomputer 
+Centers and use the computing facilities at Brookhaven, and the Los Alamos and 
+Lawrence Berkeley National Laboratories.
+  Various terminals and I/O devices are 
+available in the astronomers' labs and offices.  The University operates a 
+research grade library with a branch located in the ESS building.  Its 
+astronomy collection is extensive and kept up to date.  The Department has well 
+equipped electronics and machine shops for the support of research activities.
+\medskip
+
+     The  average number of graduate students in the Astronomy 
+Program at Stony Brook is about 15.  The department strives to support fully 
+all graduate students in good academic standing.  A wide range of research 
+grant support (research assistantships) and university support (fellowships
+ and teaching 
+assistantships) allow attainment of that goal, both for the academic year and 
+summer.  Students follow a course of study that is both broadly based and 
+topical, and are encouraged to participate in research as early in their 
+graduate careers as is possible.  Stony Brook's astronomy graduate program is 
+distinguished by the number of Ph.D. students who have taken positions at 
+universities and research laboratories across the nation. 
+     
+\vfill\eject
+
+
+\centerline{\bf THE FACULTY}
+\bigskip
+\cl{ Johannes Hardorp}
+\cl{ Roger Knacke}
+\cl{ James Lattimer}
+\cl{ Jack J. Lissauer}
+\cl{ Tobias C. Owen}
+\cl{ Deane M. Peterson}
+\cl{ Michal Simon}
+\cl{ Philip M. Solomon}
+\cl{ Amos Yahil}
+\bigskip
+\cl{\bf ADJUNCT and VISITING FACULTY}
+\bigskip
+\cl{ Michael Allison}
+\cl{ Miriam A. Forman}
+\cl{ Richard Wagener}
+\vfill\eject
+
+
+
+\noindent
+{\bf Johannes Hardorp}
+\medskip
+\noindent
+(631) 632-8232
+\medskip
+\noindent
+Associate Professor
+\medskip
+\noindent
+Ph.D. Hamburg, 1960
+\medskip
+\noindent
+{\bf Research Interests}: 
+\smallskip
+\interest{Stellar atmospheres, stellar evolution, rotating stars,\cr         
+peculiar stars, solar analogs, history of science}
+\bigskip
+\bigskip
+\noindent
+{\bf Current Research}
+\smallskip
+
+For several years now I have been involved in finding the place of the sun 
+among the stars.  My observations have led to an improvement of planetary 
+photometry, to a long overdue improvement of our knowledge of the solar         
+spectral irradiance, and to a revision of the MK system of classification.
+
+Presently I am looking for observational clues to large-scale interior mixing.  
+Correlating carbon abundances from IUE spectra of a hundred main-sequence 
+B-stars to rotational velocities turned out to be inconclusive so far.
+
+Recently I became fascinated with the more fundamental aspects of science, for 
+example the question of whether the concept of gravitational mass was ever 
+necessary.  This kindled my interest in history of science from Ptolemy to 
+Newton.
+
+\bigskip
+\noindent {\bf Recent Publications}
+\smallskip
+\itemitem{ 1. 1982}{``The Sun Among the Stars V. A Second Search for Solar 
+Spectral Analogs.  The Hyades' Distance'', in {\sl Astron. Astrophys.}, {\bf 105}, 120.}
+\smallskip
+\itemitem{ 2. 1986}{``An Experimental Test of Newton's Celestial Mechanics'',   
+ in {\sl Amer. J. Physics}, {\bf 54}, 532.}
+\smallskip
+\itemitem{ 3. 1986}{``Carbon and Nitrogen in B2 to A2 Main-Sequence Stars'' (with H. Cugier, A. Koratkar, J. Scott), in            
+ {\sl New Insights in Astrophysics}, E.J. Rolfe, ed.} 
+
+\eject
+
+\noindent
+{\bf Roger Knacke}
+\medskip
+\noindent
+(631) 632-8189
+\medskip
+\noindent
+Professor
+\medskip
+\noindent
+Ph.D.  U. of California, Berkeley, 1969
+\medskip
+\noindent
+{\bf Research Interests}: 
+\smallskip
+\interest{Infrared Astronomy, interstellar gas and dust, \cr          
+planetary atmospheres, comets}
+\bigskip
+\bigskip
+\noindent
+{\bf Current Research}
+\smallskip
+
+My research interests concentrate on exploring connections between interstellar 
+gas and dust, star and planet formation, and the early solar system.
+
+Our group is using infrared spectroscopy to study the interstellar medium.  
+Recent results show that methane, CH{$_4$}, is rare in most interstellar 
+clouds, but carbonaceous material is found in solids in the interstellar 
+grains.  We hope that a picture of interstellar carbon chemistry will emerge 
+from this research.
+
+Part of the program has been the investigation of the composition of comets 
+which are believed to be primitive objects perhaps incorporating interstellar 
+material in relatively unaltered forms.  We are studying the dark, carbonaceous 
+material that covers the nuclei of comets, including that of comet Halley.  
+This material may be related to interstellar carbon and be the source of much 
+of the carbon found on Earth.
+
+We are investigating the abundances and distributions of CO, C{$_2$}H{$_6$}, 
+C{$_3$}H{$_2$}, GeH{$_4$}, and D on Jupiter and Saturn.  A recently completed 
+Ph.D. thesis project clarified the origin of Jovian CO and the oxygen 
+abundance.  These abundances provide clues to the properties of the gases and 
+solids out of which the planets formed.
+
+Our group uses observing facilities at Mauna Kea, Kitt Peak, Cerro Tololo, and 
+the Kuiper Airborne Observatory.  The observations are primarily based on the 
+infrared region of the spectrum and incorporate spectroscopy, polarimetry, and 
+photometry.
+
+\bigskip
+\noindent {\bf Recent Publications}
+\smallskip
+\itemitem{ 1. 1984}{``Cosmic Dust and the Comet Connection'', in {\sl Sky and 
+Telescope}, September.}
+\smallskip
+\itemitem{ 2. 1985}{``Search for Interstellar Methane'' (with K.S. Knoll, T.R.  
+Geballe, and A.T. Tokunaga), in {\sl Ap. J. (Letters)}, {\bf 298}, L67.}
+\smallskip
+\itemitem{ 3. 1986}{``Detection of Carbon Monoxide in Saturn'' (with K.S. 
+Knoll, T.R. Geballe, and A.T. Tokunaga), in {\sl Astrophys. J. (Letters)},      
+{\bf 309}, L91.}
+\smallskip
+\itemitem{ 4. 1986}{``Observations of 3.2-3.6 Micron Emission Features in Comet 
+Halley'' (with T.Y. Brooke and R.R. Joyce), in {\sl Ap. J. (Letters)}, {\bf 
+310}, L49.}     
+\itemitem{ 5. 1987}{``Sampling the Stuff of a Comet'', {\sl Sky and Telescope}, 
+March.}
+
+\eject
+
+
+\noindent
+{\bf James Lattimer}
+\medskip
+\noindent
+(631) 632-8227
+\medskip
+\noindent
+Associate Professor
+\medskip
+\noindent
+Ph.D. U. of Texas, 1976
+\medskip
+\noindent
+{\bf Research Interests}: 
+\smallskip
+\interest{Supernovae, neutron stars, neutrino astrophysics, \cr          
+nuclear matter, grain formation, meteorite genesis, \cr
+galactic evolution}
+\bigskip
+\bigskip
+\noindent
+{\bf Current Research}
+\smallskip
+
+My major research interests deal with the interaction between nuclear theory 
+and some outstanding problems in astrophysics.  The chief emphasis of this 
+program is on stellar collapse, Type II supernovae, neutron star formation, and 
+neutrino astrophysics.  Central to these topics are the development of an 
+equation of state of hot, dense matter and numerical simulations of 
+gravitational collapse and neutron star birth.  We are using general 
+relativistic hydrodynamical models with detailed neutrino 
+transport and the LLPR 
+(Lattimer, Lamb, Pethick, and Ravenhall) equation of state (see 2,3 below).
+
+We are modeling not only the stellar collapse leading up to supernova, but also 
+the quasi-static deleptonization and cooling of the nascent neutron star. 
+ Our studies 
+of neutrinos in  stellar collapse and neutron star formation concentrate on 
+their detectability and signatures, as neutrinos are the only direct probe of 
+collapse and early supernova dynamics.  The recent detection of neutrinos from 
+SN 1987a has spectacularly confirmed predictions from current supernova models.
+
+I have been interested for some time in the question of whether or not 
+supernovae produce large quantities of dust.  There is a school of thought 
+which predicts they are the only way to form and preserve the tremendous 
+interstellar gas phase depletions of elements such as Ca, Ti, Mg, etc.  Once 
+again, SN 1987a may present us with a test of these ideas.
+
+I am also currently pursuing investigations into the origin of meteorites, 
+especially carbonaceous and enstatite chondrites.  This is done with the aid of 
+chemical equilibrium condensation simulations including all minerals and solid 
+solutions for which data is known or has been reasonably estimated.  Details of 
+the environment and formation location of these primitive meteorites will 
+hopefully emerge, together with an understanding of the early evolution of the 
+pre-solar nebula.
+\bigskip
+\noindent {\bf Recent Publications}
+\smallskip
+\itemitem{ 1. 1982}{``Condensation of Grains'',
+ in {\sl Formation of Planetary Systems }, ed A. Brahic (Cepau-des Editions:
+ Toulouse) pp. 189-192.
+\smallskip
+\itemitem{ 2. 1984}{``Physical Properties of Hot, Dense Matter: the General 
+Case.'' (with C.J. Pethick, D.G. Ravenhall and D.Q. Lamb), in {\sl Nucl. Phys.} 
+, {\bf A432}, pp. 646-742.}
+\smallskip
+\itemitem{ 3. 1985}{``The Equation of State of Hot Dense Matter and
+ Supernovae'', in {\sl High Energy Astrophysics}, ed. F.K. Lamb 
+(Benjamin/Cummings: Menlo Park), pp. 1-38.
+\smallskip
+\itemitem{ 4. 1986}{``The Birth of Neutron Stars'' (with A. Burrows),
+ in {\sl Astrophys. J.}, {\bf 307}, pp. 
+178-196.}
+\smallskip
+\itemitem{ 5. 1987}{``Neutrinos From SN1987a.'' (with A. Burrows), in {\sl      
+Astrophys. J. (Letters)}, {\bf 318}, L63-68.}
+
+\eject
+
+\noindent
+{\bf Jack J. Lissauer}
+\medskip
+\noindent
+(631) 632-8225
+\medskip
+\noindent
+Assistant Professor
+\medskip
+\noindent
+Ph.D. University of California, Berkeley, 1982
+\medskip
+\noindent
+{\bf Research Interests}: 
+\smallskip
+\interest{Solar nebula, planet formation, planetary rings and moons,\cr          
+comets, asteroids, binary stars}
+\bigskip
+\bigskip
+\noindent
+{\bf Current Research}
+\smallskip
+
+My research interests concern dynamical problems in astrophysics, especially 
+those related to the solar system.  I have worked extensively on analyzing the 
+structure of Saturn's rings and on ring-moon interactions; this research is     
+ongoing.  I am currently working to better characterize the radial and 
+azimuthal structure of the Uranian rings using Voyager stellar occultation 
+data.  I also intend to continue my studies of Neptune's arc rings when the 
+Voyager spacecraft encounters that planet.
+
+One of my main interests is the formation of the solar system.  I have recently 
+written a review article on how observations of planetary rings and moons can 
+be used to constrain conditions in the protoplanetary disk.  The cratering 
+record can be used as an indirect observation of debris swept up in the last 
+stages of the accretion process.  I have analyzed the cratering record on 
+Saturn's moons in order to estimate the flux of stray debris and to assess the 
+hypothesis that Saturn's smaller moons may have been catastrophically disrupted 
+and re-accreted early in the history of the solar system.  I am continuing this 
+work with studies of the Galilean Satellites of Jupiter and Earth's Moon.
+
+The problem central to planetary accretion is the formation of Jupiter.  Growth 
+of the Jovian core by solid body accretion, followed by gravitational trapping 
+of nebular gas, offers the most attractive scenario.  However, in most models, 
+core accretion times range from 5 {$\times$} 10{$^{7}$} to 5 {$\times$} 10{$^{8}$} years, whereas 
+the gas in the solar nebula is likely to have been dispersed by the energetic 
+T-Tauri stage solar wind in a few {$\times$} 10{$^{6}$} years.  I have found that under 
+a restricted range of nebula conditions, Jupiter's core could have grown via 
+runaway accretion in {$\approx$}10{$^{6}$} years, and the rest of the current 
+planetary system can also be accounted for.  I am now studying the 
+cross-sections in the 3-body problem in order to better estimate runaway 
+accretion rates.
+
+I am also interested in dynamical problems outside the solar system.  I am 
+currently developing models of two types of circumstellar disks: the disk 
+surrounding the {$\epsilon$} Aurigae secondary and the dust disks observed 
+around nearby stars by IRAS.  These latter disks are especially intriguing 
+because they may have many properties in common with the protoplanetary disk.
+
+\bigskip
+\noindent {\bf Recent Publications}
+\smallskip
+\itemitem{ 1. 1984}{``The Epsilon Aurigae Secondary: A Binary Embedded Within A 
+Disk?'' (with D. E. Backman), in {\sl Astrophys. J. Lett.}, {\bf 286}, pp. L39-L41.}
+\smallskip
+\itemitem{ 2. 1985}{``Shepherding Model for Neptune's Arc Ring.'', in {\sl Nature}, {\bf 318}, pp. 544-545.}
+\smallskip
+\itemitem{ 3. 1986}{``The Production of `Braids' in Saturn's F Ring.'' (with S. J. Peale), in {\sl Icarus}, {\bf 67}, pp. 
+358-374.}
+\smallskip
+\itemitem{ 4. 1987}{``Timescales for Planetary Accretion and the Structure of 
+the Protoplanetary Disk'', in {\sl Icarus}, {\bf 69}, pp. 249-265.}
+
+\eject
+
+\noindent
+{\bf Tobias C. Owen}
+\medskip
+\noindent
+(631) 632-8188
+\medskip
+\noindent
+Professor
+\medskip
+\noindent
+Ph.D. University of Arizona, 1965
+\medskip
+\noindent
+{\bf Research Interests}: 
+\smallskip
+\interest{Physics and chemistry of the solar system}
+\interest{Investigations of planetary environments from spacecraft}
+\interest{The origin and cosmic distribution of life}
+\bigskip
+\bigskip
+\noindent
+{\bf Current Research}
+\smallskip
+
+My research is centered on observations of planets, satellites, and comets with 
+Earth-based and Earth-orbiting telescopes and with experiments on spacecraft.
+
+As a member of the Imaging Science Team on the NASA Voyager mission, I have 
+been studying the outer planets and their satellites as the spacecraft 
+successively encountered them.  The next target is Neptune, to be reached in 
+August, 1989.  I am also a member of the mass spectrometer teams on the Galileo 
+and CRAF missions and an Interdisciplinary Scientist on Galileo.  I am working 
+on a cooperative mission between ESA and NASA that will send an orbiter and 
+Titan probe to the Saturn system, if it is approved by both agencies.
+
+The program of ground-based studies uses IR spectroscopy and some radio 
+observations to determine the composition and structure of planetary 
+atmospheres. Recent results include the discovery of HDO on Mars and an 
+evaluation of D/H in the atmospheres of the outer planets
+and Titan.  The high value of D/H on Mars implies a warm early
+atmosphere, while the enrichment on Titan and 
+Uranus may indicate that one or more isolated, low-temperature reservoirs of 
+deuterium exist in the outer solar system with values of D/H established prior 
+to solar system formation.  Current projects include CH$_{_3}$D on Neptune, a   
+systematic study of Jupiter's Great Red Spot at 5 and 10 {\mum}, and            
+investigations of comets and Titan from 2-4 {\mum}.  In another program, 
+laboratory studies of the trapping of gases by low temperature ice carried out 
+by A. Bar-Nun and colleagues at Tel-Aviv are being applied to problems 
+concerning the volatile content of comets and the 
+origins of planetary atmospheres.
+
+\bigskip
+\noindent {\bf Recent Publications}
+\smallskip
+\itemitem{ 1. 1983}{``Cosmological Implications of Helium and Deuterium Abundances on 
+Jupiter and Saturn'' (with D. Gautier), in {\sl Nature}, {\bf 302}, 215.}
+\smallskip
+\itemitem{ 2. 1983}{``Titan: Discovery of Carbon Monoxide in its Atmosphere'' (with B. L. 
+Lutz and C. de Bergh), in {\sl Science}, {\bf 220}, 1374.}
+\smallskip
+\itemitem{ 3. 1983}{``Cosmogonical Implications of Elemental and Isotropic Abundances in
+Atmospheres of the Giant Planets'' (with D. Gautier), in {\sl Nature}, {\bf 
+304}, 691.}
+\smallskip
+\itemitem{ 4. 1986}{``Deuterium in the Outer Solar System'' (with C. de Bergh and B. L. 
+Lutz), in {\sl Nature}, {\bf 320}, pp. 244-246.}
+\smallskip
+\itemitem{ 5. 1986}{``Voyager 2 in the Uranian System: Imaging Science Results'' (with B. A. 
+Smith and 38 other authors), in {\sl Science}, {\bf 233}, 43.}
+
+\eject
+
+\noindent
+{\bf Deane M. Peterson}
+\medskip
+\noindent
+(631) 632-8223
+\medskip
+\noindent
+Acting Chairman of Earth and Space Sciences Dept.
+
+\noindent
+Associate Professor
+\medskip
+\noindent
+Ph.D.  Harvard University, 1968
+\medskip
+\noindent
+{\bf Research Interests}: 
+\smallskip
+\interest{Stellar Atmospheres: radiative transfer, chemical \cr          
+pecularities}
+\interest{Binary Systems: lunar occultations, speckle \cr
+interferometry, spectroscopy}
+\bigskip
+\bigskip
+\noindent
+{\bf Current Research}
+\smallskip
+
+My research effort is presently aimed at pinning down the distance modulus of 
+the Hyades and, if possible, the Pleiades and the Praesepe distance moduli as 
+well.  The approach is to combine both high angular resolution and 
+spectroscopic data on intermediate period binaries to evaluate `orbital' 
+parallaxes.
+
+The high angular resolution data needed for this purpose is a combination of 
+speckle interferometry obtained from the literature and lunar occultation data 
+obtained by myself and collaborators.  The occultation data accumulates slowly 
+and to date is primarily useful in providing additional observational 
+constraints on existing binary systems.  The spectroscopic data on systems in 
+the appropriate period range have been obtained over a five year period and are 
+being reduced.  The combined observational data have already yielded very 
+useful results.  We have found the published period for Finsen 342 to be 
+spurious.  When this and several smaller effects are corrected, we have revised
+McClure's recent distance modulus for the Hyades from 3.47 mag down to 3.36. 
+ We 
+are re-examining the visual binaries used by McClure for possible spurious 
+orbits (one or two more cases are a distinct possibility) and are adding 
+spectroscopic material to augment other cases.  We expect this to yield a 
+cluster distance modulus with an uncertainty of only a few hundredths of a 
+magnitude, a determination that depends only on the validity of Newton's laws.
+
+With the announcement that the MMT mirrors can be optically phased for up to 10 
+minutes at a time comes the opportunity of resolving objects on a scale of 15 
+milliarcseconds.  This should allow at least two of the Hyades spectroscopic 
+binaries to be resolved over a substantial fraction of their orbits.  We expect 
+to obtain real `orbital' parallaxes for these systems in a year's time.
+\bigskip
+\noindent {\bf Recent Publications}
+\smallskip
+\itemitem{ 1. 1984}{``Lunar Occultations of Praesepe  I. Mauna Kea'' (with N.M. 
+White), in {\sl Astron. J.}, {\bf 89}, pp. 824-829.}
+\smallskip
+\itemitem{ 2. 1985}{``Lunar Occultation Observations of M8E-IR'' (with M. 
+Simon, A.J. Longmore, J.W.V. Storey, and A.T. Tokunaga), in {\sl Astrophys. J.},      
+{\bf }, pp. 328-335.}
+\smallskip
+\itemitem{ 3. 1987}{``Finsen 3342 and the Hyades Distance Modulus'' (with R. 
+Solensky), in {\sl Astrophys. J.}, {\bf 315}, 286.}
+\smallskip
+\itemitem{ 4. 1987}{``Milliarcsecond Resolution Infrared Observations of Young 
+Stars in Taurus and Ophiuchus'' (with M. Simon, R.R. Howell, A.J. Longmore, B.A. Wilking, and W.P. 
+Chen), in {\sl Ap. J.}, {\bf 320}, 344.    
+
+\eject
+
+\noindent
+{\bf Michal Simon}
+\medskip
+\noindent
+(631) 632-8226
+\medskip
+\noindent
+Professor
+\medskip
+\noindent
+Ph.D. Cornell University, 1967
+\medskip
+\noindent
+{\bf Research Interests}: 
+\smallskip  
+\interest{Young Stellar Objects - IR observations at high spectral \cr          
+resolution and at very high angular resolution}
+\interest{Star formation in galaxies}
+\bigskip
+\bigskip
+\noindent
+{\bf Current Research}
+\smallskip
+
+I am interested in star formation in the Milky Way and in other galaxies.  
+To study young stars at high angular resolution, I am obtaining lunar 
+occultation data in the IR.  It is possible to achieve resolutions              
+corresponding to {$\approx$}1 AU at the distance of the Taurus and Ophiuchus    
+associations. In several instances, extended dusty structures 
+have been resolved.  Thus far, 
+the binary frequency in the sample of some 25 young stars observed seems 
+normal. 
+
+I also study obscured young objects by high resolution infrared spectroscopy.   
+Diagnostics involving a variety of lines in the IR have been identified to      
+probe the diverse physical conditions near the central young star, at its       
+accretion disk, and at comparatively greater distances from the star.  In at 
+least one case, that of MWC 349 (which however may not be young), clear 
+spectroscopic evidence for a disk is found.
+
+As the opportunities occur, I am also applying the occultation technique
+ in the IR to objects of particular
+interest.  Thus, for example, I am involved in a 
+campaign to observe the current series of occultations of the galactic center.
+
+To study the IRAS galaxy phenomenon, I am using the IRAS database and optical data to determine the infrared and optical luminosity functions of IRAS 
+galaxies and to compare the optical and environmental characteristics of IRAS 
+and non-IRAS galaxies.The optical luminosity function of the IRAS galaxies in our sample shows that 
+in the magnitude range -22 {$<$} M{$_J$} {$<$} -18, IRAS galaxies represent 
+about 15{$\%$} of field galaxies.  At low optical luminosities,
+ M{$_J$} {$>$}-19 
+ mag, there may be a deficiency of IRAS galaxies relative to the field galaxies.
+  
+\bigskip
+\noindent {\bf Recent Publications}
+\smallskip
+\itemitem{ 1. 1985}{``Lunar Occultation Observations of M8E-IR'' (with D.M. Peterson, A.J. Longmore, J.W.V. Storey, 
+and A.T. Tokunaga), in {\sl Ap. J.}, {\bf 298}, 328.}
+\smallskip
+\itemitem{ 2. 1986}{``Velocity Resolved IR Spectroscopy of MWC 349'' (with F. Hamann), in {\sl Ap. J.}, {\bf 311}, 909.}
+\smallskip
+\itemitem{ 3. 1987}{``The IR Emission Line Spectrum of {$\gamma$} Cas''
+ (with F. Hamann), in {\sl Ap. J.}, {\bf 318}, 356.}
+\smallskip
+\itemitem{ 4. 1987}{``Milliarcsecond Resolution Infrared Observation of Young 
+Star in Taurus and Ophiuchus'' (with R.R. Howell, A.J. Longmore, B.A. Wilking, D.M. 
+Peterson, and W.-P. Chen), in {\sl Ap. J.}, {\bf 320}, 344.}
+\smallskip
+\itemitem{ 5. 1987}{``Optical and IR Luminosity Functions of IRAS Galaxies''
+ (with J. Patricia Vader), {\sl Astron. J.}, {\bf 94}, ---.}
+
+\eject
+
+\noindent
+{\bf Philip M. Solomon}
+\medskip
+\noindent
+(631) 632-8231
+\medskip
+\noindent
+Professor
+\medskip
+\noindent
+Ph.D.  U. of Wisconsin, 1964
+\medskip
+\noindent
+{\bf Research Interests}: 
+\smallskip
+\interest{Star formation - Giant Molecular Clouds in Milky\cr
+Way and External galaxies, galactic structure, far \cr
+infrared luminosity of the galaxy}
+\interest{Stratospheric Research - observations of trace\cr
+constituents in the ozone layer, Antarctic Ozone Hole}
+\bigskip
+\noindent
+{\bf Current Research}
+\smallskip
+
+My astronomical research during the past five years has centered on 
+observations of the physical properties and galactic distribution of star 
+forming molecular clouds in the Milky Way and external 
+galaxies.  In 1978 I named these objects 
+Giant Molecular Clouds (GMC's) based on an analysis of the first 
+high resolution maps of the galactic plane in CO emission, 
+which systematically measured 
+their size and mass.  The molecular observations, primarily 
+of millimeter wave CO 
+emissions, have been carried out at the FCRAO 14 meter Mm Wave Antenna 
+through a time-sharing agreement.The Massachusetts-Stony Brook CO Galactic      
+Plane Survey was a major product of this time-sharing.  
+At Stony Brook we have carried out a systematic analysis 
+of 300 galactic molecular clouds leading to the following conclusions: 1) 
+The velocity linewidth of GMC's is proportional to the 0.5 
+power of the size; 2) The virial mass-CO luminosity law for giant GMC's is     
+{\sl M} {$\propto$} ({\sl L}{$_C$}{$_O$}){$^0$}{$^.$}{$^8$}{$^1$}.  The total 
+mass of the molecular clouds between {\sl R} = 2 {\sl kpc} and the solar circle 
+is 2.0 {$\times$} 10{$^9$} {$\sm$}; 3)
+ The mass-CO luminosity calibration is proportional to the square root of   
+the mean density of the clouds and inversely proportional to the temperature;   
+4) Molecular clouds are in or near virial equilibrium; 5) the cloud CO          
+luminosity is {\sl L}{$_C$}{$_O$} {$\propto$} {$\sigma$}{$_\upsilon$}{$^5$}.
+Current research uses the far infrared IRAS images to determine the 
+star formation activity, particularly the OB star formation rate in GMC's.
+
+We have also had an extensive program of extragalactic CO observations.  The    
+far IR to CO ratio is on average seven times higher for closely interacting
+ or merging galaxies     
+than for isolated galaxies.  This effect is due in part to increased star       
+formation efficiencies in merging galaxies. For the IR luminous galaxies the    
+ratio of FIR to CO (molecular mass) is higher than for any cloud in the Milky   
+Way.
+
+I have also been engaged in a program of observations of stratospheric trace 
+constituents in the ozone layer utilizing the techniques of millimeter wave 
+astronomy.  We recently returned from a highly successful expedition to 
+Antarctica where we found evidence that chlorofluorocarbons are involved in the  
+Antarctic Ozone Hole.
+
+\bigskip
+\noindent {\bf Recent Publications}
+\smallskip
+\itemitem{ 1. 1984}{``Star Formation in a Galactic Context'', {\sl Protostars 
+and Planets II}, ed. by D. Black, University of Arizona Press, p.59.}
+\itemitem{ 2. 1985}{``The Massachusetts-Stony Brook Galactic Plane CO Survey: 
+Disk and Spiral Arm Molecular Cloud Populations'', {\sl Astrophys. J.           
+(Letters)}, {\bf 292}, L16-L24.}
+\smallskip
+\itemitem{ 3. 1987}{``Mass, Luminosity and Linewidth Relations of galactic 
+Molecular Clouds'', {\sl Astrophys. J.}, August 15.}
+\smallskip
+\itemitem{ 4. 1987}{``The Molecular Galaxy'', proceedings of {\sl NATO ASI on 
+the Galaxy}, ed. by G. Gilmore, publ. D. Reidel Co.}
+\itemitem{ 5. 1987}{``The Extraordinary CO Luminosity of the Far Infrared 
+Galaxy VII Zw31'' (with L. Sage), {\sl Astrophys. J. (Letters)}, to be published.}
+\smallskip
+\eject
+
+\noindent
+{\bf Amos Yahil}
+\medskip
+\noindent
+(631) 632-8224
+\medskip
+\noindent
+Professor
+\medskip
+\noindent
+Ph.D. California Institute of Technology, 1970
+\medskip
+\noindent
+{\bf Research Interests}:
+\smallskip
+\interest {Cosmology, galaxies, stellar collapse, supernovae,\cr
+ hydrodynamics}
+\bigskip
+\bigskip
+\noindent
+{\bf Current Research}
+\smallskip
+
+    My two main areas of research are cosmology and supernovae.  Work on
+supernovae is done in collaboration with Professor Lattimer, and is
+elaborated by him.  The description below relates to my cosmological
+research.  Additional areas of interest include galactic structure and
+molecular clouds.
+ 
+    A major unknown in cosmology is the value of the mean mass-energy density
+of the Universe.  This parameter is important not only to astrophysics, but
+also to theories of elementary particle physics, dealing with baryogenesis
+and the possible inflationary phase of the early Universe.  The method I use
+to determine the mean density is to relate the so-called peculiar velocities
+(deviations from the pure Hubble expansion of the Universe) to the density
+perturbations which have caused them.  Current work concentrates on a sample
+of infrared selected galaxies, for which my collaborators and I have obtained
+redshifts.  This sample, which covers 85{$\%$} of the sky, is the most complete
+and homogeneous catalog of galaxies with recession velocities {$<$}     
+10,000 km s{$^-$}{$^1$}.
+
+\bigskip
+\noindent 
+{\bf Recent Publications}
+\smallskip
+\itemitem{1. 1983}{``Self-Similar Stellar Collapse'', in {\sl Astrophys. J.},   
+{\bf 265}, 1047.}
+\smallskip
+\itemitem{2. 1986}{``The Dipole Anisotropy of the IRAS Galaxies and the         
+Microwave Background Radiation'' (with D. Walker and M. Rowan-Robinson),        
+in {\sl Astrophys. J. (Letters)}, {\bf 301}, L1.}
+\smallskip
+\itemitem{3. 1986}{``The Tidal Field in the Local Supercluster'' (with P.B.     
+Lilje and B.J.T. Jones), in {\sl Astrophys. J.}, {\bf 307}, 91.}
+\smallskip
+\itemitem{4. 1987}{``What is the Cosmological Density Parameter~$\Omega_o$?'',
+ in       
+{\sl Nearly Normal Galaxies: From the Planck Time to the Present}, ed. S.M.     
+Faber (Berlin: Springer), p332.} 
+\smallskip
+\itemitem{5. 1987}{``A Conservative Lagrangian Hydrodynamical Scheme with       
+Parabolic Spatial Accuracy'' (with M.D. Johnston and A. Burrows), {\sl J. Comp. 
+Phys.}, submitted.}
+\eject
+
+\cl{\bf GRADUATE EDUCATION PROGRAM}
+\bigskip
+\bigskip
+
+The purpose of the Stony Brook Astronomy Graduate Program is to provide a 
+foundation in basic astronomy and astrophysics through a combination of course 
+work and independent research projects during the first two years.  In the last 
+two or three years, the student is primarily involved in carrying out 
+research that will lead to a doctoral dissertation.
+
+\medskip
+The courses include: Galactic and Extragalactic Astronomy, Interstellar Matter, 
+Stellar Interiors, Cosmology, Stellar Atmospheres, Planetary Atmospheres and 
+Astronomical Techniques.  In addition, at least one advanced topic seminar is 
+held every year.  Recent topics have included Star Formation, Cosmic Rays,
+Molecular Radio Astronomy, Saturn, Galaxy Formation, and Comets.
+ Students are also required to take basic graduate level 
+physics courses in Electricity and Magnetism, Statistical Mechanics, and 
+Quantum Mechanics.  For those students who enter the program without a strong 
+physics background, we recommend upper-level undergraduate physics courses.
+
+\medskip
+The Ph.D. Preliminary Examination is given near the end of a student's fourth 
+semester.  It consists of a written exam covering the material covered in the 
+graduate courses and an oral exam testing the student's comprehension of basic 
+ideas in Astronomy.  Advancement into the Ph.D. program is based on the results 
+of this examination combined with the student's performance in courses.  
+Students who fail this examination generally complete their education here with 
+a Master's Degree.  Following successful completion of the Preliminary 
+Examination, students generally spend the next six months choosing a thesis 
+topic and advisor.  They are then required to submit a thesis proposal.  In 
+practice this often takes one year from the completion of the Ph.D. preliminary 
+Exam.  The student is given an oral examination on the thesis proposal and 
+advanced to candidacy.  
+
+
+\medskip
+The thesis research covers a wide variety of topics in observational and 
+theoretical astronomy.  Ph.D. theses that have been completed in the last five 
+years are listed below. 
+
+
+
+\bigskip
+
+\centerline{\bf RECENT DOCTORAL THESES (Past Five Years)}
+\bigskip
+
+J. Cooperstein - 1982
+
+\indent{ ``The Equation of State and Neutrino Transport in Supernovae"} 
+
+\indent{~ Advisor: G. Brown (Physics Dept.)}
+\medskip
+C. Jog - 1982
+
+\indent{ ``Two-Fluid Gravitational Instabilities in a Galactic Disk"}
+
+\indent{~ Advisor: P. Solomon}
+\medskip
+R. Danehy - 1982
+
+\indent{ ``A Search for Minor Constituents in the near-IR Spectra of Titan, 
+Uranus,}
+
+\indent{~ and Neptune"}
+
+\indent{~ Advisor: T. Owen
+\medskip
+S. Kim - 1982
+
+\indent{ ``The Deuterium to Hydrogen Ratio in the Atmospheres of Jupiter and 
+Titan"}
+
+\indent{~ Advisor: J. Caldwell}
+\medskip
+D. Sanders - 1982
+
+\indent{ ``The Distribution of Molecular Clouds in the Galaxy - Molecular 
+Hydrogen as a Major}
+
+\indent{~ Component of the Interstellar Medium"}
+
+\indent{~ Advisor: P. Solomon}
+\eject
+A. Wandel - 1983
+
+\indent{ ``Self-consistent Spherical Accretion and Models of Quasars"
+
+\indent{~ Advisor: A. Yahil}
+\medskip
+K. Kolehmainen - 1984
+
+\indent{ ``Surface Properties of Neutron Rich Nuclei - Pion}
+
+\indent{~ Condensation at Finite Temperature"
+
+\indent{~ Advisor: J. Lattimer}
+\medskip
+E. Baron - 1985
+
+\indent{ ``The Equation of State and General Relativity in Supernovae"
+
+\indent{~ Advisor: G. Brown (Physics Dept.)}
+\medskip
+A. Evrard - 1986
+
+\indent{ ``Dark Matter and the Dynamics of Galaxy Clustering"}
+
+\indent{~ Advisor: A. Yahil}
+\medskip
+R. Wagener - 1986
+
+\indent{ ``Ultraviolet Observations of Jupiter and Uranus"}
+
+\indent{~ Advisor: J. Caldwell}
+\medskip
+F. Hamann - 1987
+
+\indent{ ``The Circumstellar Envelopes of Young Stellar Objects and Emission 
+Line Stars"
+
+\indent{~ Advisor: M. Simon}
+\medskip
+K. Noll - 1987
+
+\indent{ ``Carbon Monoxide and Disequilibrium Dynamics in Jupiter and Saturn" 
+
+\indent{~ Advisor: R. Knacke} 
+
+
+
+\vfill\eject\end
+
+
+
+\end
+
+

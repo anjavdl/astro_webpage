@@ -1,0 +1,357 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="ProgId" content="Word.Document">
+   <meta name="Generator" content="Microsoft Word 9">
+   <meta name="Originator" content="Microsoft Word 9">
+   <meta name="GENERATOR" content="Mozilla/4.77 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Quantum Harmonic Oscillator energy eigenstates</title>
+<link rel=File-List href="./harmonic_program_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Philip Allen</o:Author>
+  <o:LastAuthor>Philip Allen</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>10</o:TotalTime>
+  <o:LastPrinted>2002-01-11T20:06:00Z</o:LastPrinted>
+  <o:Created>2002-01-19T19:00:00Z</o:Created>
+  <o:LastSaved>2002-01-19T19:00:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>399</o:Words>
+  <o:Characters>2275</o:Characters>
+  <o:Company>Stony Brook University</o:Company>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2793</o:CharactersWithSpaces>
+  <o:Version>9.4402</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+        {font-family:"MS Mincho";
+        panose-1:2 2 6 9 4 2 5 8 3 4;
+        mso-font-alt:"\FF2D\FF33 \660E\671D";
+        mso-font-charset:128;
+        mso-generic-font-family:roman;
+        mso-font-format:other;
+        mso-font-pitch:fixed;
+        mso-font-signature:1 134676480 16 0 131072 0;}
+@font-face
+        {font-family:"\@MS Mincho";
+        panose-1:2 2 6 9 4 2 5 8 3 4;
+        mso-font-charset:128;
+        mso-generic-font-family:modern;
+        mso-font-pitch:fixed;
+        mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+        {mso-style-parent:"";
+        margin:0in;
+        margin-bottom:.0001pt;
+        mso-pagination:widow-orphan;
+        font-size:12.0pt;
+        font-family:"Times New Roman";
+        mso-fareast-font-family:"Times New Roman";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+        {margin:0in;
+        margin-bottom:.0001pt;
+        mso-pagination:widow-orphan;
+        font-size:10.0pt;
+        font-family:"Courier New";
+        mso-fareast-font-family:"Times New Roman";}
+@page Section1
+        {size:8.5in 11.0in;
+        margin:1.0in 65.95pt 1.0in 65.95pt;
+        mso-header-margin:.5in;
+        mso-footer-margin:.5in;
+        mso-paper-source:0;}
+div.Section1
+        {page:Section1;}
+-->
+</style>
+</head>
+<body lang="EN-US" style="tab-interval:.5in">
+
+<div class=Section1>
+<center><font face="Times New Roman,Times"><font color="#3333FF"><font size=+2>Numerical
+Integration of the time-independent Schroedinger Equation.</font></font></font>
+<br><font face="Times New Roman,Times"><font color="#3333FF"><font size=+2>A
+simple example using fortran and PGPLOT graphics.</font></font></font></center>
+
+
+<p class="MsoPlainText"><font face="Times New Roman,Times">The time-independent
+Schroedinger equation of a Harmonic oscillator (a mass <i>m</i> reacting
+to a spring with spring constant <i>k</i>) is (note: html isn't good at
+symbols and I am using&nbsp; <i><u>h</u></i> to represent hbar)</font>
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">-(<u>h</u><sup>2</sup>/2m)d<sup>2</sup></font><font face="Symbol">y</font><font face="Times New Roman,Times">/dx<sup>2
+</sup>+(kx<sup>2</sup>/2)</font><font face="Symbol">y</font><font face="Times New Roman,Times">
+= E</font><font face="Symbol">y.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">Let us use
+a new dimensionless variable <i>u = x/x<sub>0</sub></i>.&nbsp; For the
+moment we don't specify what value the "<b>length scale</b>" <i>x<sub>0</sub></i>
+should take.&nbsp; (We know from the classical Harmonic oscillator that
+there is an intrinsic time scale, the reciprocal of the frequency scale
+</font><i><font face="Symbol">w</font><font face="Times New Roman,Times"><sub>0</sub><sup>2</sup>
+= k/m</font></i><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp; .&nbsp;
+But the classical problem has no intrinsic length scale.&nbsp; The properties
+do not depend on the amplitude of oscillation.)&nbsp; Then the Schroedinger
+equation is</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">-(<u>h</u><sup>2</sup>/2mx<sub>0</sub><sup>2</sup>)d<sup>2</sup></font><font face="Symbol">y</font><font face="Times New Roman,Times">/du<sup>2
+</sup>+(kx<sub>0</sub><sup>2</sup>/2)u<sup>2</sup></font><font face="Symbol">y</font><font face="Times New Roman,Times">
+= E</font><font face="Symbol">y.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">This equation
+has two factors, <i>(<u>h</u><sup>2</sup>/2mx<sub>0</sub><sup>2</sup>)</i>&nbsp;
+and&nbsp; <i>(kx<sub>0</sub><sup>2</sup>/2)</i> which each have units energy.&nbsp;
+The equation simplifies if we specify that&nbsp; <i>x<sub>0</sub><sup>2</sup></i>should
+be such that the two factors are equal.</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">(<u>h</u><sup>2</sup>/2mx<sub>0</sub><sup>2</sup>)</font></i><font face="Times New Roman,Times">&nbsp;
+= <i>(kx<sub>0</sub><sup>2</sup>/2)&nbsp;&nbsp; </i>or<i>&nbsp;&nbsp; x<sub>0</sub><sup>4</sup>=
+<u>h</u><sup>2</sup>/mk
+</i>or<i>&nbsp;
+x<sub>0</sub><sup>4</sup>=
+<u>h</u><sup>2</sup>/m<sup>2</sup></i></font><i><font face="Symbol">w</font><font face="Times New Roman,Times"><sub>0</sub><sup>2</sup></font></i><font face="Times New Roman,Times">or<i>&nbsp;
+x<sub>0</sub> = (<u>h</u>/m</i></font><i><font face="Symbol">w</font><font face="Times New Roman,Times"><sub>0</sub>)<sup>1/2</sup></font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">The harmonic
+oscillator acquires a length scale when quantum mechanics is added!&nbsp;
+Using this choice for <i>x<sub>0</sub></i> ,&nbsp; the two factors of dimension
+energy both become</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">(<u>h</u><sup>2</sup>/2mx<sub>0</sub><sup>2</sup>)</font></i><font face="Times New Roman,Times">&nbsp;
+= <i>(kx<sub>0</sub><sup>2</sup>/2)&nbsp; =&nbsp; <u>h</u></i></font><i><font face="Symbol">w</font><font face="Times New Roman,Times"><sub>0</sub>/2.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">Thus there
+is also an intrinsic energy scale, the zero point energy <i>E<sub>0</sub>=<u>h</u></i></font><i><font face="Symbol">w</font><font face="Times New Roman,Times"><sub>0</sub>/2.</font></i><font face="Times New Roman,Times">&nbsp;&nbsp;
+If we define the dimensionless energy to be <i>e=E/E<sub>0</sub></i>, then
+the Schroedinger equation becomes (after dividing out the common factor
+<i>E<sub>0</sub></i>),</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">-d<sup>2</sup></font><font face="Symbol">y</font><font face="Times New Roman,Times">/du<sup>2
+</sup>+u<sup>2</sup></font><font face="Symbol">y</font><font face="Times New Roman,Times">
+= e</font><font face="Symbol">y.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">The Schroedinger
+equation can be written as two coupled first-order equations (instead of
+a single second-order equation):</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">d</font><font face="Symbol">y</font><font face="Times New Roman,Times">/du
+= </font><font face="Symbol">f</font><font face="Times New Roman,Times">(u)
+= (</font><font face="Symbol">y</font><font face="Times New Roman,Times">(u+du)-</font><font face="Symbol">y</font><font face="Times New Roman,Times">(u))/du</font></i></div>
+
+<div class="MsoPlainText"><i><font face="Times New Roman,Times">d</font><font face="Symbol">f</font><font face="Times New Roman,Times">/du
+= (u<sup>2</sup>-e)</font><font face="Symbol">y</font><font face="Times New Roman,Times">(u)
+= (</font><font face="Symbol">f</font><font face="Times New Roman,Times">(u+du)-</font><font face="Symbol">f</font><font face="Times New Roman,Times">(u))/du.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">The last part
+of these equations is exact only in the limit as <i>du</i> goes to zero.&nbsp;
+But we will solve these equations for some small value of <i>du</i>, expecting
+that the answer will be reasonably good if <i>du</i> is small compared
+to the intrinsic scale of dimensionless length, namely <i>1</i>.&nbsp;
+In the example below, we take <i>du</i> to be <i>.01</i>.&nbsp; The approximate
+equations are</font></div>
+
+<blockquote>
+<div class="MsoPlainText"><i><font face="Symbol">y</font><font face="Times New Roman,Times">(u+du)
+= </font><font face="Symbol">y</font><font face="Times New Roman,Times">(u)
++ </font><font face="Symbol">f</font><font face="Times New Roman,Times">(u)
+du</font></i></div>
+
+<div class="MsoPlainText"><i><font face="Symbol">f</font><font face="Times New Roman,Times">(u+du)
+= </font><font face="Symbol">f</font><font face="Times New Roman,Times">(u)
++ (u<sup>2</sup>-e)</font><font face="Symbol">y</font><font face="Times New Roman,Times">(u)
+du.</font></i></div>
+</blockquote>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">The Fortran
+program below integrates the equation of motion by sequential application
+of the 2 equations above.&nbsp; This is known as the "<font color="#FF0000">Euler
+method</font>" or sometimes as the "forward Euler method" for integrating.&nbsp;
+Given initial values, at some initial displacement <i>u<sub>0</sub></i>
+( we will choose <i>u<sub>0</sub>=0</i>, which is the usual choice), the
+Schroedinger equation determines the values of&nbsp; the wavefunction </font><i><font face="Symbol">y</font><font face="Times New Roman,Times">(u)</font></i><font face="Times New Roman,Times">
+and the derivative </font><i><font face="Symbol">f</font><font face="Times New Roman,Times">(u)</font></i><font face="Times New Roman,Times">&nbsp;
+at all other values of displacement u.&nbsp; What you discover when you
+integrate forward or backward in displacement <i>u</i> is that the wavefunction
+almost always diverges rapidly to + or - infinity.&nbsp; The wavefunction
+cannot be normalized because the integral of | </font><i><font face="Symbol">y</font><font face="Times New Roman,Times">(u)</font></i><font face="Times New Roman,Times">
+|<sup>2</sup> over all <i>u</i> is infinite.&nbsp; A non-normalizable wavefunction
+has to be rejected -- it is not a valid stationary state of the time-dependent
+Schroedinger equation.&nbsp; However, for special values of energy <i>E<sub>n</sub></i>
+(or dimensionless energy <i>e<sub>n</sub></i>) the wavefunction&nbsp;&nbsp;
+decays to <i>0</i> at large values of <i>u</i>.&nbsp; You can locate these
+special energies (the "eigen-energies" or energy eigenvalues) by trial
+and error using the program below.&nbsp; The subscript <i>n</i> just counts
+the states (or counts the number of nodes or zeros in the wavefunction.)</font>
+<p><font face="Times New Roman,Times">What initial values should we take
+for</font>&nbsp; <i><font face="Symbol">y</font>(0)</i> and&nbsp; <i><font face="Symbol">f</font>(0)</i>?
+<font face="Times New Roman,Times">The
+oscillator has the simplifying feature that the potential energy</font>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <i><font face="Times New Roman,Times">kx<sup>2</sup>/2=&nbsp;
+E<sub>0</sub> u<sup>2</sup></font></i>
+<p><font face="Times New Roman,Times"><b>is an even function</b> of displacement
+<i>u</i>.&nbsp;
+It is therefore possible to choose the wavefunctions&nbsp; </font><i><font face="Symbol">y</font><font face="Times New Roman,Times">(u)</font></i><font face="Times New Roman,Times">
+to be either even or odd functions of u, that is,</font>
+<p><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><i><font face="Symbol">y</font><font face="Times New Roman,Times">(-u)</font></i><font face="Times New Roman,Times">=
++ </font><i><font face="Symbol">y</font><font face="Times New Roman,Times">(u)</font></i><font face="Times New Roman,Times">&nbsp;&nbsp;
+(even)&nbsp; or&nbsp; </font><i><font face="Symbol">y</font><font face="Times New Roman,Times">(-u)</font></i><font face="Times New Roman,Times">&nbsp;&nbsp;
+= - </font><i><font face="Symbol">y</font><font face="Times New Roman,Times">(u)</font></i><font face="Times New Roman,Times">&nbsp;&nbsp;&nbsp;
+(odd).</font>
+<p><font face="Times New Roman,Times">The even solutions have&nbsp; </font><i><font face="Symbol">y</font><font face="Times New Roman,Times">(0)=1</font></i><font face="Times New Roman,Times">
+and&nbsp; </font><i><font face="Symbol">f</font><font face="Times New Roman,Times">(0)=0</font></i><font face="Times New Roman,Times">.&nbsp;
+The odd solutions have&nbsp; </font><i><font face="Symbol">y</font><font face="Times New Roman,Times">(0)=0</font></i><font face="Times New Roman,Times">
+and&nbsp; </font><i><font face="Symbol">f</font><font face="Times New Roman,Times">(0)
+=1</font></i><font face="Times New Roman,Times">.&nbsp; The choice <i>1</i>
+is arbitrary.&nbsp; We could choose any non-zero number.&nbsp; Later, after
+the full solution&nbsp; </font><i><font face="Symbol">y</font><font face="Times New Roman,Times">(u)</font></i><font face="Times New Roman,Times">
+is known, it can be rescaled to have normalization equal to the conventional
+value, <i>1</i>.</font>
+<br>&nbsp;</div>
+
+<div class="MsoPlainText"><font face="Times New Roman,Times">Finally, a
+note about the Euler algorithm for integrating the Schroedinger equation.&nbsp;
+It is actually not a very good algorithm.&nbsp; You should verify that
+the accuracy of the eigenenergies scales as (<i>du</i>) to some particular
+low power (which power?)&nbsp; Better algorithms are available.&nbsp; The
+most popular is called the "fourth order Runge-Kutta" algorithm.&nbsp;
+But for our purposes, the simple Euler algorithm is sufficient.&nbsp; Computers
+are so fast that we can afford to choose <i>du</i> much smaller than .<i>01</i>
+if we wish.</font></div>
+
+<center><font face="Times New Roman,Times"><font color="#CC33CC"><font size=+2>Sample
+program</font></font></font></center>
+
+<p><font face="Times New Roman,Times">&nbsp;</font><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+program Harmoniceigen</font>
+<br><font face="Courier New,Courier">c integrate Schrodinger equation to
+find wavefunction of Harmonic oscillator.</font>
+<br><font face="Courier New,Courier">c use simplest possible "forward Euler"
+integrating algorithm</font>
+<br><font face="Courier New,Courier">c use PGPLOT graphics.&nbsp; Compile
+statement for SUN workstations at</font>
+<br><font face="Courier New,Courier">c the math sinc site:&nbsp; g77 -o
+prog prog.f $PGPLOTL</font>
+<br><font face="Courier New,Courier">c find energies e at which psi ->
+0 as x -> infinity</font>
+<br><font face="Courier New,Courier">c use dimensionless variables u=x/a,
+a=root(hbar/m omega), e=2E/hbar omega</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; implicit
+none</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; real
+phi(2),psi(2),u(2),du,e,phi0,psi0</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; integer
+i,n,PGBEG,ier,PGOPEN</font>
+<br><font face="Courier New,Courier">c choose step size delta=du (for example,
+du=0.01)</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; write(6,*)
+'what is step size du?'</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; read(5,*)
+du</font>
+<br><font face="Courier New,Courier">c choose initial values of psi and
+phi=d(psi)/dx (eg, 1 and 0</font>
+<br><font face="Courier New,Courier">c for even solutions, 0 and 1 for
+odd solutions)</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; write(6,*)
+'what is psi(0)?'</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; read(5,*)
+psi0</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; write(6,*)
+'what is phi(0) (derivative of phi)?'</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; read(5,*)
+phi0</font>
+<br><font face="Courier New,Courier">c integrate from u=0 to u=N*du; choose
+N&nbsp; (since the graph plots u values</font>
+<br><font face="Courier New,Courier">c only out to 6.5, the best choice
+would be 6.5/du or 650 steps.&nbsp; The</font>
+<br><font face="Courier New,Courier">c setting 6.5 can be changed; it is
+set in the PGENV call below.)</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; write(6,*)
+'how many steps?'</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; read(5,*)
+n</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; write(6,*)
+'what trial energy e?'</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; read(5,*)
+e</font>
+<br><font face="Courier New,Courier">c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ier=PGBEG(0,'?',1,1)</font>
+<br><font face="Courier New,Courier">c open PGPLOT using xwindow</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ier=PGOPEN('/xwin')</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if
+(ier .ne. 1) stop</font>
+<br><font face="Courier New,Courier">c PGPAP scales the size and aspect
+ratio of the plot</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; call
+PGPAP(7.0,1.0)</font>
+<br><font face="Courier New,Courier">c PGENV chooses beginning and end
+of x and y axis</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; call
+PGENV(-0.5,6.5,-2.5,2.5,1,1)</font>
+<br><font face="Courier New,Courier">c PGLAB labels the axes and the graph</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; call
+PGLAB('dimensionless position','wavefunction amplitude',</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp; 1 'Harmonic
+Oscillator')</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+do while (e .gt. 0.)</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+psi(1)=psi0</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+phi(1)=phi0</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+u(1)=0.</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+do 100 i=1,n</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+u(2)=u(1)+du</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+psi(2)=psi(1)+phi(1)*du</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+phi(2)=phi(1)+(u(1)*u(1)-e)*psi(1)*du</font>
+<br><font face="Courier New,Courier">c PGLINE plots the next increment
+of psi versus u.</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+call PGLINE(2,u,psi)</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+u(1)=u(2)</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+psi(1)=psi(2)</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+phi(1)=phi(2)</font>
+<br><font face="Courier New,Courier">&nbsp; 100&nbsp;&nbsp;&nbsp;&nbsp;
+continue</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+write(6,*) 'another e?'</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+read(5,*) e</font>
+<br><font face="Courier New,Courier">c to stop, use e&lt;0.</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+end do</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; call
+PGEND</font>
+<br><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end</font>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;</div>
+
+</body>
+</html>

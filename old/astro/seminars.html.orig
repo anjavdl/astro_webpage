@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <title>Astronomy Seminars</title>
+    <link rel="icon" type="image/png" href="saturn_icon.png">
+    <link rel="stylesheet" type="text/css" href="/astro/test.css">
+  </head>
+
+  <body>
+
+    <div id="containerw">
+
+      <div id="header">
+	<h1>Stony Brook Astronomy Program</h1>
+	<h2>Department of Physics and Astronomy</h2>
+	<h2>Stony Brook University</h2>
+      </div> <!-- #end div header -->
+
+      <div id="menubar">
+  
+	<ul>
+          <li><a href="seminars.html">seminar page</a></li>
+	  <li><a href="./">astro home</a></li>
+	</ul>
+
+      </div> <!-- #end div menubar -->
+
+      <div id="contentw">
+      <div id="people">
+	<h1 style="color: #990000; font-style: normal; 
+	  text-align: center; font-weight: bold">
+	  Astronomy Seminars</h1>
+
+	<blockquote>
+	  <p>Seminars are held Wednesdays at 1:30pm in ESS 450,
+	    exceptions will be noted. Cookie and tea will follow the talk.<br>
+	    Click on highlighted titles for abstracts.</p>
+
+	  <p>**Special Note: There is a new joint <a href="http://www.cosmo.bnl.gov/seminar.html">
+             Stony Brook/Brookhaven cosmology seminar series.  </a>
+             Astronomy Seminars will be held
+             on alternating weeks with these seminars as indicated below.
+</p>
+
+	  <h3>Spring 2015 </h3>
+
+	  <table style="border: 0; cellpadding: 4; width: 100%; 
+	    margine-right: auto; margine-left: auto">
+	    <tbody>
+	      <tr>
+		<td style="text-align: left; width: 15%"><b>Date</b></td>
+		<td style="text-align: center; width: 30%"><b>Speaker</b></td>
+		<td style="text-align: center; width: 54%"><b>Title</b></td>
+		<td style="background-color:white; text-align: center; width: 1%"><b></b></td>
+	      </tr>
+
+              <tr>
+                <td><em>Jan. 28</em></td>
+                <td align="center">Neelima Sehgal
+                  <br><em>Stony Brook</em></td>
+                <td align="center"><a href="seminars/SS15/28jan15.html">
+                  First Detection of a New Signal: Measuring Halo Masses with CMB Lensing</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+              <tr>
+                <td><em>Feb. 4</em></td>
+                <td align="center"> Maryam Modjaz
+                  <br><em>NYU</em></td>
+                <td align="center"><a href="seminars/SS15/04feb15.html">
+Stellar Forensics with Explosions: Supernovae, Gamma-Ray Bursts, and their Environments
+</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+<!--
+              <tr>
+                <td><em>Month. XX</em></td>
+                <td align="center" colspan=2><a href="http://www.cosmo.bnl.gov/seminar.html">
+              Cosmology seminar</a></td>
+                <td style="background-color:white";align="center">
+                  <br><em>&nbsp;</em></td>
+              </tr>
+-->
+              <tr>
+                <td><em>Feb. 11</em></td>
+                <td align="center"> Charles Keeton
+                  <br><em>Rutgers</em></td>
+                <td align="center"><a href="seminars/SS15/11feb15.html"> 
+Finding and focusing the best cosmic telescopes
+</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+              <tr>
+                <td><em>Feb. 18</em></td>
+                <td align="center"> Scott Ferson
+                  <br><em>Stony Brook University</em></td>
+                <td align="center">
+<a href="seminars/SS15/18feb15.html"> Uncertainty quantification with hard problems
+</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+              <tr>
+                <td><em>Feb. 25</em><br>
+                <a href="http://www.cosmo.bnl.gov/seminar.html"> Cosmology Seminar</td>
+                <td align="center"> Chris Tully
+                  <br><em>Princeton University</em></td>
+                <td align="center"> <a href="seminars/SS15/25feb15.html"> 
+One Second After the Big Bang
+ </td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+              <tr>
+                <td><em>Mar. 4</em></td>
+                <td align="center"> Nanda Rea
+                  <br><em> University of Amsterdam/CSIC-IEEC  </em></td>
+                <td align="center"> <a href="seminars/SS15/04mar15.html">
+Magnetars life cycle: birth, evolution and death
+</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+              <tr>
+                <td><em>Mar. 12 - THU, 2:30pm (note special day and time)</em></td>
+                <td align="center"> Zoltan Haiman
+                  <br><em>Columbia University</em></td>
+                <td align="center">
+<a href="seminars/SS15/11mar15.html"> Electromagnetic Emission from Compact Supermassive Black Hole Binaries
+</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+              <tr>
+                <td><em>Mar. 18</em><br>
+                <a href="http://www.cosmo.bnl.gov/seminar.html"> Cosmology Seminar</td>
+                <td align="center"> Kendrick Smith
+                  <br><em>Perimeter Institute</em></td>
+                <td align="center"><a href="seminars/SS15/18mar15.html"> Primordial non-Gaussianity in the CMB 
+and Large-Scale Structure
+</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+
+                <td><em>Mar. 25 </em></td>
+                <td align="center"> Viviana Acquaviva
+                  <br><em>NYC College of Technology</em></td>
+                <td align="center"><a href="seminars/SS15/25mar15.html"> 
+Understanding the Universe through distant galaxies
+</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+
+              <tr>
+                <td><em>Apr. 2 - THU 2:30pm (note special day and time)</em></td>
+                <td align="center"> Brian Metzger
+                  <br><em>Columbia</em></td>
+                <td align="center"><a href="seminars/SS15/01apr15.html">
+The Observable Signatures of Neutron Star Mergers
+</td> 
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+              <tr>
+                <td><em>Apr. 8</em></td>
+                <td align="center"> Warren Skidmore
+                  <br><em>Thirty Meter Telescope Corporation</em></td>
+                <td align="center">
+                <a href="seminars/SS15/08apr15.html"> Thirty Meter Telescope: The Next Generation Ground 
+Based Optical/Infra Red Observatory</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+              <tr>
+                <td><em>Apr. 15  </em></td>
+                <td align="center"> Kohei Inayoshi
+                  <br><em>Columbia University</em></td>
+                <td align="center"><a href="seminars/SS15/15apr15.html"> Formation of supermassive black hole seeds in the early Universe
+
+</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+              <tr>
+                <td><em>Apr.22 - 2:30pm (note special time)</em></td>
+                <td align="center">Joseph Gelfand
+                  <br><em>New York University</em></td>
+                <td align="center"><a href="seminars/SS15/22apr15.html"> Investigating the physics of core-collapse supernovae and ultra-relativistic outflows using pulsar wind nebulae</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+              <tr>
+                <td><em>Apr.29</em><br>
+                <a href="http://www.cosmo.bnl.gov/seminar.html"> Cosmology Seminar </td> 
+                <td align="center">Francis-Yan Cyr-Racine
+                  <br><em>Caltech/JPL</em></td>
+                <td align="center"><a href="seminars/SS15/29apr15.html"> A Particle Physicist's Nightmare: What If Dark Matter is Truly Dark? </td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+
+              <tr>
+                <td><em>May 6</em></td>
+                <td align="center"> Jia Liu 
+                  <br><em>Columbia University</em></td>
+                <td align="center"><a href="seminars/SS15/06may15.html">
+Cosmological constraints from weak lensing non-Gaussian statistics</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+
+              <tr>
+                <td><em>May 13 - 2:30pm </em></td>
+                <td align="center"> Lara Nava
+                  <br><em>University of Jerusalem</em></td>
+                <td align="center"><a href="seminars/SS15/13may15.html">
+High-energy emission from Gamma-Ray Bursts: advancing our knowledge on
+GRBs and relativistic shocks through modeling of afterglow radiation
+</td>
+                <td style="background-color:white";align="center"></td>
+              </tr>
+
+
+	    </tbody>
+	  </table>
+
+           <p>
+	  &nbsp;&nbsp;* NOTE: Unusual day and/or time!
+           </p>
+<!--
+           <p>
+	  &nbsp;&nbsp;** Joint informal talk with Nuclear Theory.
+           </p>
+
+           <p>
+	  &nbsp;&nbsp;*** Joint talk with Nuclear Physics in C133.
+           </p>
+	  &nbsp;&nbsp;* NOTE:  Joint Seminar with Geosciences. ESS 123, 4pm Thursday<br>
+-->
+<!--
+           <p>
+	  * NOTE: Unusual day and/or time!
+           </p>
+           <p>
+	  ** NOTE:  Joint Seminar with the Institute for Advanced  Computational Sciences<br>
+           </p>
+-->
+<!--
+	  *** NOTE: Unusual day and/or time!
+	  * NOTE: Unusual day and/or time!
+-->
+
+	</blockquote>
+	
+	<p style="line-height: 0%; color: #990000"><b>Archives:</b><br></p>
+
+	<blockquote><p><b>
+	  <a href="seminars/archive/SemF14.html"> Fall 2014</a><br>
+	  <a href="seminars/archive/SemS14.html"> Spring 2014</a><br>
+	  <a href="seminars/archive/SemF13.html"> Fall 2013</a><br>
+	  <a href="seminars/archive/SemS13.html"> Spring 2013</a><br>
+	  <a href="seminars/archive/SemF12.html"> Fall 2012</a><br>
+	  <a href="seminars/archive/SemS12.html"> Spring 2012</a><br>
+	  <a href="seminars/archive/SemF11.html"> Fall 2011</a><br>
+	  <a href="seminars/archive/SemS11.html"> Spring 2011</a><br>
+	  <a href="seminars/archive/SemF10.html"> Fall 2010</a><br>
+	  <a href="seminars/archive/SemS10.html"> Spring 2010</a><br>
+	  <a href="seminars/archive/SemF09.html"> Fall 2009</a><br>
+	  <a href="seminars/archive/SemS09.html"> Spring 2009</a><br>
+	  <a href="seminars/archive/SemF08.html"> Fall 2008</a> 
+	</b></p></blockquote>
+      </blockquote>
+
+      </div>
+      </div> <!-- #end div content -->
+
+      
+      <div id="footer">
+	Dept. of Physics and Astronomy &bull; SUNY Stony Brook &bull;
+	Stony Brook, NY 11794-3800 
+      </div> <!-- #end div footer -->
+      
+    </div> <!-- #end div container -->
+    
+  </body>
+</html>

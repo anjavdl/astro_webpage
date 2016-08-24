@@ -918,6 +918,7 @@ ul.style {
 
 ul.style li {
     position: relative;
+    padding-top: 2em;
     /* border-top: solid 1px rgba(255, 255, 255, 0.2); */
 }
 
@@ -959,6 +960,10 @@ ul.style span.collab {
     line-height: 120%;
     font-size: 0.8em;
     color: #cccccc;
+}
+
+.style p {
+    padding-top: 1em;
 }
 
 .style img

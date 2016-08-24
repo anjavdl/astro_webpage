@@ -24,7 +24,8 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
-        $(".wrapper.style1").css("background-image", "url(./wdmerger_08030_new.png)");
+        var Images = ["wdmerger_08030_new.png", "koda_m51.png"];
+        $(".wrapper.style1").css("background-image", "url(images/" + Images[Math.floor(Math.random() * Images.length)] + ")");
       });
     </script>
   </head>

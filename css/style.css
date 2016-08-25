@@ -865,7 +865,7 @@ input[type="button"].small,
 {
    margin-left: auto;
    margin-right: auto;
-   padding: 0;
+   padding: 3px;
    border: 0px;
    border-collapse: collapse;
 }

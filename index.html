@@ -31,6 +31,7 @@
                         "Nightsky over CTIO"]
         var n = Math.floor(Math.random() * Images.length);
         $(".wrapper.style1").css("background-image", "url(images/" + Images[n] + ")");
+        $("#caption").html(Captions[n]);
       });
     </script>
   </head>
@@ -94,7 +95,7 @@
     </div>  <!-- end wrapper style 1 -->
 
       <div id="caption">
-	<p>this is a test
+	<!-- jquery will write here -->
       </div>
 
     <!-- Section One -->

@@ -25,7 +25,12 @@
     <script type="text/javascript">
       $(document).ready(function(){
         var Images = ["wdmerger_08030_new.png", "koda_m51.png", "act_perspective2.jpg", "20773683256_7808f2a2ce_k.jpg"];
-        $(".wrapper.style1").css("background-image", "url(images/" + Images[Math.floor(Math.random() * Images.length)] + ")");
+        var Captions = ["Castro Simulation of the Merger of Two White Dwarfs",
+                        "CARMA + NRO45 image of molecular gas in the Whirlpool Galaxy (M51)",
+                        "the Atacama Cosmology Telescope (ACT) in Northern Chile",
+                        "Nightsky over CTIO"]
+        var n = Math.floor(Math.random() * Images.length);
+        $(".wrapper.style1").css("background-image", "url(images/" + Images[n] + ")");
       });
     </script>
   </head>
@@ -86,8 +91,11 @@
 	  <!-- eu odio at lectus pulvinar mollis. Vestibulum sem magna.</p> -->
  	</section>
       </div>
+    </div>  <!-- end wrapper style 1 -->
 
-    </div>
+      <div id="caption">
+	<p>this is a test
+      </div>
 
     <!-- Section One -->
     <div class="wrapper style2">

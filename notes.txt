@@ -1,0 +1,3 @@
+we want to do this for the captioning
+
+http://stackoverflow.com/questions/10487292/position-absolute-but-relative-to-parent

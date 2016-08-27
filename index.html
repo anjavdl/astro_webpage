@@ -25,9 +25,16 @@
     <script type="text/javascript">
       $(document).ready(function(){
         var Images = ["wdmerger_08030_new.png", "koda_m51.png", "act_perspective2.jpg", "20773683256_7808f2a2ce_k.jpg"];
-        $(".wrapper.style1").css("background-image", "url(images/" + Images[Math.floor(Math.random() * Images.length)] + ")");
+        var Captions = ["Castro Simulation of the Merger of Two White Dwarfs",
+                        "CARMA + NRO45 image of molecular gas in the Whirlpool Galaxy (M51)",
+                        "the Atacama Cosmology Telescope (ACT) in Northern Chile",
+                        "Nightsky over CTIO"]
+        var n = Math.floor(Math.random() * Images.length);
+        $(".wrapper.style1").css("background-image", "url(images/" + Images[n] + ")");
+        $("#caption").html(Captions[n]);
       });
     </script>
+
   </head>
 
   <body class="homepage">
@@ -85,8 +92,11 @@
 	  <!-- eu odio at lectus pulvinar mollis. Vestibulum sem magna.</p> -->
  	</section>
       </div>
+    </div>  <!-- end wrapper style 1 -->
 
-    </div>
+      <div id="caption">
+	<!-- jquery will write here -->
+      </div>
 
     <!-- Section One -->
     <div class="wrapper style2">
@@ -109,7 +119,7 @@
 		cosmology.</span>
 	      </header>
 	      
-	      <p class="center"><a href="#" class="button small">Learn More</a></p>
+	      <p class="center"><a href="about.html" class="button small">Learn More</a></p>
 
             </section>
          </div>
@@ -118,12 +128,10 @@
 	    <section>
 	      <header class="major">
 		<h2>News</h2>
-		<ul>
-		  <li>item 1</li>
-		  <li>item 2</li>
-		  <li>item 3</li>
-		</ul>
 	      </header>
+<a class="twitter-timeline" href="https://twitter.com/sbu_astro">Tweets by sbu_astro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		
+
           </section>
          </div>
 
@@ -147,7 +155,7 @@
            find jobs at National Laboratories, observatories,
            industry, and academia.</p>
 
-	<a href="#" class="button alt">Learn About Astronomy Undergrads </a>
+	<a href="academics.html" class="button alt">Learn About Astronomy Undergrads </a>
       </section>
     </div>
 

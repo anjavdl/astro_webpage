@@ -223,3 +223,8 @@ input[type="button"],
 #caption {
     top: 44px;  /* needs to be the same as title height */
 }
+
+#twitter-widget-0  {
+  padding: 0px;
+  margin: 0 auto;
+}

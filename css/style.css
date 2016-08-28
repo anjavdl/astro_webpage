@@ -1005,3 +1005,16 @@ ul.style span.collab {
 dt {
     margin-top: 0.5em;
 }
+
+
+
+
+/* if you use the inspector in chrome, you'll see that the twitter
+   timeline comes in as an iframe with the class 'twitter-widget-0' */
+
+/* https://stackoverflow.com/questions/25236932/editing-css-of-twitter-timeline-widget-iframe */
+
+#twitter-widget-0 { 
+  width: 100% !important; 
+  padding: 12px 12px 10px 69px !important; 
+}

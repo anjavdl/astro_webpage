@@ -1,0 +1,7 @@
+Research in Computational Astrophysics
+faculty member: Michael Zingale
+
+I've worked with undergraduate students using large-scale simulation
+codes to model convection and flames, as well as worked on basic
+numerical algorithms.  Students with a strong background in
+computation/programming are welcomed to come by.

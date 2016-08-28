@@ -1,0 +1,14 @@
+Models of Thermonuclear Flames with Large Reaction Networks
+faculty members: Alan Calder and Michael Zingale
+
+Profs. Alan Calder and Michael Zingale would be interested in working
+with an advanced undergraduate on modeling thermonuclear flames in the
+context of Type Ia supernova, using large reaction networks.  We wish
+to explore the change in flame properties with metalicity as well as
+understand how multi-stage reaction networks alter the behavior of
+flame instabilities in multi-dimensions.  The interested undergraduate
+should have programming experience (and have taken AST/PHY 277) and
+should also have taken thermodynamics.
+
+
+
